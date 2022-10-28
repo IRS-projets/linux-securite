@@ -11,23 +11,23 @@ Il faut implémenter au minimum 4 "services essentiels" et 2 "services"
 
 #### Services essentiels
 
- - [] Accès internet
- - [] Accès intranet
- - [] SSH
- - [] DHCP
- - [] DNS
- - [] NTP
+ - [ ] Accès internet
+ - [ ] Accès intranet
+ - [ ] SSH
+ - [ ] DHCP
+ - [ ] DNS
+ - [ ] NTP
 
 #### Services
 
- - [] Partage de fichiers
- - [] Site web
- - [] Base de données
- - [] Pare-feu
- - [] Annuaire
- - [] Supervision
- - [] VPN
- - [] Proxy
- - [] Sauvegarde
- - [] Conteneurisation
- - [] Bastion
+ - [ ] Partage de fichiers
+ - [ ] Site web
+ - [ ] Base de données
+ - [ ] Pare-feu
+ - [ ] Annuaire
+ - [ ] Supervision
+ - [ ] VPN
+ - [ ] Proxy
+ - [ ] Sauvegarde
+ - [ ] Conteneurisation
+ - [ ] Bastion
