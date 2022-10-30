@@ -5,29 +5,35 @@ Projet de sécurité Linux
 
 ### Consignes
 
-Il faut implémenter au minimum 4 "services essentiels" et 2 "services"
+Il faut implémenter au minimum 4 "services essentiels" et 2 "services".
+
+Nous avons choisi les sujets les plus simples comme tâches obligatoires et d'ajouter ultérieurement d'autres projets bonus en fonction des ressources dont nous disposerons. 
 
 ### Listes
+
+Ainsi, voici les choix sur lesquels les membres se sont accordés:
 
 #### Services essentiels
 
  - [ ] Accès internet
  - [ ] Accès intranet
- - [ ] SSH
- - [ ] DHCP
- - [ ] DNS
- - [ ] NTP
+ - [x] SSH
+ - [x] DHCP
+ - [x] DNS
+ - [x] NTP
 
 #### Services
 
  - [ ] Partage de fichiers
- - [ ] Site web
+ - [x] Site web
  - [ ] Base de données
  - [ ] Pare-feu
  - [ ] Annuaire
  - [ ] Supervision
  - [ ] VPN
- - [ ] Proxy
+ - [x] Proxy
  - [ ] Sauvegarde
  - [ ] Conteneurisation
  - [ ] Bastion
+
+*Les sujets optionnels n'ont pas encore été sélectionnés.*
