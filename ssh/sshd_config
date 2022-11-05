@@ -10,19 +10,20 @@
 # possible, but leave them commented.  Uncommented options override the
 # default value.
 
-Include /etc/ssh/sshd_config.d/*.conf
+#Include /etc/ssh/sshd_config.d/*.conf
 
-#Port 22
-#AddressFamily any
+Port 2022
+AddressFamily inet
 #ListenAddress 0.0.0.0
 #ListenAddress ::
 
+# TODO: générer des clés
 #HostKey /etc/ssh/ssh_host_rsa_key
 #HostKey /etc/ssh/ssh_host_ecdsa_key
 #HostKey /etc/ssh/ssh_host_ed25519_key
 
 # Ciphers and keying
-#RekeyLimit default none
+RekeyLimit default 5m
 
 # Logging
 #SyslogFacility AUTH
@@ -30,14 +31,15 @@ Include /etc/ssh/sshd_config.d/*.conf
 
 # Authentication:
 
-#LoginGraceTime 2m
-#PermitRootLogin prohibit-password
+LoginGraceTime 1m
+PermitRootLogin no
 #StrictModes yes
-#MaxAuthTries 6
-#MaxSessions 10
+MaxAuthTries 2
+MaxSessions 2
 
 #PubkeyAuthentication yes
 
+# TODO: comprendre ce paragraphe
 # Expect .ssh/authorized_keys2 to be disregarded by default in future.
 #AuthorizedKeysFile	.ssh/authorized_keys .ssh/authorized_keys2
 
@@ -46,6 +48,7 @@ Include /etc/ssh/sshd_config.d/*.conf
 #AuthorizedKeysCommand none
 #AuthorizedKeysCommandUser nobody
 
+# TODO: on pourrait utiliser RDNS pour authentifier ?
 # For this to work you will also need host keys in /etc/ssh/ssh_known_hosts
 #HostbasedAuthentication no
 # Change to yes if you don't trust ~/.ssh/known_hosts for
@@ -55,7 +58,7 @@ Include /etc/ssh/sshd_config.d/*.conf
 #IgnoreRhosts yes
 
 # To disable tunneled clear text passwords, change to no here!
-#PasswordAuthentication yes
+PasswordAuthentication no
 #PermitEmptyPasswords no
 
 # Change to yes to enable challenge-response passwords (beware issues with
