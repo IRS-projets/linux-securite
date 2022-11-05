@@ -86,16 +86,16 @@ ChallengeResponseAuthentication no
 # If you just want the PAM account and session checks to run without
 # PAM authentication, then enable this but set PasswordAuthentication
 # and ChallengeResponseAuthentication to 'no'.
-UsePAM yes
+UsePAM no
 
-#AllowAgentForwarding yes
-#AllowTcpForwarding yes
+AllowAgentForwarding no
+AllowTcpForwarding no
 #GatewayPorts no
 X11Forwarding yes
 #X11DisplayOffset 10
 #X11UseLocalhost yes
 #PermitTTY yes
-PrintMotd no
+PrintMotd yes
 #PrintLastLog yes
 #TCPKeepAlive yes
 #PermitUserEnvironment no
@@ -109,6 +109,8 @@ PrintMotd no
 #ChrootDirectory none
 #VersionAddendum none
 
+# TODO: configurer une banière sympa, idéalement avec une valeur dynamique affichée
+# TODO: ou bien afficher l'usage de la machine (différent pour chaque machine)
 # no default banner path
 #Banner none
 
