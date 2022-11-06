@@ -56,11 +56,10 @@ Nous utiliserons donc une Raspberry Pi avec l'utilitaire openSSH pour ce projet.
      - Diminution de la quantité de tentatives de login à 2 par session (pour que chaque 2e échec soit logué - ceci sera utilisé par f2b)
      - Réduction de la quantité de sessions à 2 par hôte (pour limiter les tentatives de bruteforce). On autorisse 2 sessions pour pouvoir garder une session de "sécurité" affin d'éviter de perdre le contrôle de la machine en cas d'erreur de configuration (SSH, firewall etc)
      - interdiction de login par mot de passe (pour plus de sécurité)
-     -
      - Désactivation de l'authentification PAM (ne sera pas utilisé pour ce projet)
      - Désactivation du forwarding SSH (pour plus de sécurité)
      - Désactivation du forwarding TCP (pour plus de sécurité)
-     - bidouillage des banières (travail en cours)
+     - Ajout des banières
 
     ```bash title="/etc/ssh/sshd_config" linenums="1"
     #	$OpenBSD: sshd_config,v 1.103 2018/04/09 20:41:22 tj Exp $
@@ -82,10 +81,9 @@ Nous utiliserons donc une Raspberry Pi avec l'utilitaire openSSH pour ce projet.
     #ListenAddress 0.0.0.0
     #ListenAddress ::
 
-    # TODO: générer des clés
     #HostKey /etc/ssh/ssh_host_rsa_key
     #HostKey /etc/ssh/ssh_host_ecdsa_key
-    #HostKey /etc/ssh/ssh_host_ed25519_key
+    HostKey /etc/ssh/ssh_host_ed25519_key
 
     # Ciphers and keying
     RekeyLimit default 5m
@@ -104,7 +102,7 @@ Nous utiliserons donc une Raspberry Pi avec l'utilitaire openSSH pour ce projet.
 
     #PubkeyAuthentication yes
 
-    # TODO: comprendre ce paragraphe
+    # TODO: générer des clés
     # Expect .ssh/authorized_keys2 to be disregarded by default in future.
     #AuthorizedKeysFile	.ssh/authorized_keys .ssh/authorized_keys2
 
@@ -113,7 +111,6 @@ Nous utiliserons donc une Raspberry Pi avec l'utilitaire openSSH pour ce projet.
     #AuthorizedKeysCommand none
     #AuthorizedKeysCommandUser nobody
 
-    # TODO: on pourrait utiliser RDNS pour authentifier ?
     # For this to work you will also need host keys in /etc/ssh/ssh_known_hosts
     #HostbasedAuthentication no
     # Change to yes if you don't trust ~/.ssh/known_hosts for
@@ -174,10 +171,8 @@ Nous utiliserons donc une Raspberry Pi avec l'utilitaire openSSH pour ce projet.
     #ChrootDirectory none
     #VersionAddendum none
 
-    # TODO: configurer une banière sympa, idéalement avec une valeur dynamique affichée
-    # TODO: ou bien avec l'usage de la machine (différent pour chaque machine)
     # no default banner path
-    #Banner none
+    Banner .ssh/banner
 
     # Allow client to pass locale environment variables
     AcceptEnv LANG LC_*
@@ -195,7 +190,7 @@ Nous utiliserons donc une Raspberry Pi avec l'utilitaire openSSH pour ce projet.
 
 ### Configuration des la banières
 
-???abstract "motd"
+???abstract "MOTD"
     ```title="/etc/motd" linenums="1"
     #     #    #     #####  ####### ####### ######     ### ######   #####
     ##   ##   # #   #     #    #    #       #     #     #  #     # #     #
@@ -215,7 +210,9 @@ Nous utiliserons donc une Raspberry Pi avec l'utilitaire openSSH pour ce projet.
     ```
 
 ???abstract "SSH"
-    !!!warning "A compléter"
+    ```title=".ssh/banner" linenums="1"
+    Cette machine est responsable des services SSH et DHCP.
+    ```
 
 ## Sources
 
