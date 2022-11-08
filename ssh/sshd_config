@@ -108,7 +108,7 @@ PrintMotd yes
 #VersionAddendum none
 
 # no default banner path
-Banner .ssh/banner
+Banner /etc/ssh/banner
 
 # Allow client to pass locale environment variables
 AcceptEnv LANG LC_*
