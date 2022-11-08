@@ -6,7 +6,7 @@ Projet de sécurité Linux
 Quelques règles simples pour que tout se passe proprement:
 
  - Les commits ne se font qu dans une branche, *aucun* commit dans le main.
- - On a une branche par module *minimum*, plus la branche de la documentation. 
+ - On a une branche par module *minimum*. 
    - Si on veut modifier de facon conséquente l'état d'un module, on peut bien-sûr imbriquer une nouvelle sous-branche à la branche du module. 
  - Le merge est réalisé par celui qui a ouvert la pull request
  - On communique clairement à l'aide d'issues.
