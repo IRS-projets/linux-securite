@@ -25,28 +25,24 @@ Nous utiliserons donc une Raspberry Pi avec l'utilitaire openSSH pour ce projet.
 
 ### Détail des solutions implémentées
 
- - [ ] Configuration de base d'un RPi
- - [ ] Installation d'un serveur SSH
- - [ ] Authentification par clés
-     - [ ] Procédure pour échange de clés
- - [ ] SFTP
- - [ ] Fail2Ban
- - Knocking ?
- - A compléter?
+ - Configuration de base d'un RPi
+ - Installation d'un serveur SSH
+ - Authentification par clés
+     - Procédure pour échange de clés
+ - SFTP
+ - Fail2Ban
 
 ## Implémentation
 
 ### Configuration SSH
 
-???abstract "Installation du serveur SSH"
-    ```bash"
+!!! abstract "Installation du serveur SSH"
+    ```bash
     apt install openssh-server
     ```
 
-???+abstract "sshd_config"
+??? abstract "sshd_config"
     Modifications effectuées par rapport à la version d'origine:
-
-    !!!warning "Plusieurs TODO sont à traiter"
 
      - Passage au port 2022 (pour réduire les attaques bruteforce par script)
      - Interdiction de l'IPv6 (parce qu'on en aura pas besoin pour ce projet)
@@ -102,7 +98,6 @@ Nous utiliserons donc une Raspberry Pi avec l'utilitaire openSSH pour ce projet.
 
     #PubkeyAuthentication yes
 
-    # TODO: générer des clés
     # Expect .ssh/authorized_keys2 to be disregarded by default in future.
     #AuthorizedKeysFile	.ssh/authorized_keys .ssh/authorized_keys2
 
@@ -210,7 +205,7 @@ Nous utiliserons donc une Raspberry Pi avec l'utilitaire openSSH pour ce projet.
     ```
 
 ???abstract "SSH"
-    ```title=".ssh/banner" linenums="1"
+    ```title="/etc/ssh/banner" linenums="1"
     Cette machine est responsable des services SSH et DHCP.
     ```
 
@@ -218,4 +213,3 @@ Nous utiliserons donc une Raspberry Pi avec l'utilitaire openSSH pour ce projet.
 
  - [OpenSSH](https://www.openssh.com/)
  - [patorjk.com](http://www.patorjk.com/software/taag/)
- - [Fail2ban](https://www.fail2ban.org/wiki/index.php/MANUAL_0_8)
