@@ -11,4 +11,5 @@ projetlinux.com.         IN      SOA   ns.projetlinux.com. admin.projetlinux.com
 		IN	NS	ns.projetlinux.com.    ; External NS
 		IN	A       192.169.0.2   ; IP of domain
 ns.projetlinux.com.	 IN      A       192.169.0.2   ; IP of NS
+ntp.projetlinux.com.	IN	A	192.169.0.2  ; IP of NTP
 rapport.projetlinux.com	IN	A	192.169.0.2  ; Rapport subdomain
