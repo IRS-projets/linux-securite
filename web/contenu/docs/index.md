@@ -21,37 +21,50 @@ Voici les membres du groupe:
     Attention, il faudra demander le mot de passe a notre administrateur. 
 
 Voici la liste des sujets que nous avons choisi pour notre maquette. <br>
-Les sujets non achevés sont détaillés pour donner une vue d'ensemble sur l'avancée du groupe dans le projet.
+Les sujets sont détaillés pour donner une vue d'ensemble sur l'avancée du groupe dans le projet.
 
-!!! warning "SSH"
-     - [ ] Faire les configurations
-     - [x] Ecrire la documentation
-     - [ ] Tester le fonctionnement en préproduction
+!!! success "SSH"
+     - [x] Faire les configurations
+     - [x] Tester le fonctionnement en préproduction
+     - [x] Mettre à jour le rapport
+          - [x] Ecrire la documentation
+     - [ ] *Side-quest*: F2b
 
 !!! fail "DHCP"
      - [ ] Faire les configurations
      - [ ] Tester le fonctionnement en préproduction
+     - [ ] Mettre à jour le rapport
 
-!!! warning "DNS"
-     - [x] Faire les configurations
-     - [ ] Ecrire la documentation
-     - [ ] Tester le fonctionnement en préproduction
-
-!!! fail "NTP"
+!!! fail "DNS"
      - [ ] Faire les configurations
-     - [ ] Ecrire la documentation
      - [ ] Tester le fonctionnement en préproduction
+     - [ ] Mettre à jour le rapport
+          - [ ] Ecrire la documentation
 
-!!! warning "Site web"
+!!! warning "NTP"
     !!! warning inline end "A besoin de DNS"
      - [x] Faire les configurations
      - [ ] Tester le fonctionnement en préproduction
+     - [x] Mettre à jour le rapport
+          - [x] Ecrire la documentation
+
+!!! warning "Site web"
+     - [x] Faire les configurations
+    !!! warning inline end "A besoin de DNS"
+     - [ ] Préparer le contenu
+     - [ ] Tester le fonctionnement en préproduction
+     - [x] Mettre à jour le rapport
+     - [ ] *Side-quest*: faire un vrai site en ligne
 
 !!! fail "Proxy cache"
      - [ ] Faire les configurations
     !!! warning inline end "A besoin de NTP"
-     - [ ] Ecrire la documentation    
      - [ ] Tester le fonctionnement en préproduction
+     - [ ] Mettre à jour le rapport
+          - [ ] Ecrrie la documentation 
+
+!!! example "Nous avons choisi des sujets en rab ou en collaboration!"
+    !!! fail "Accès Internet"
 
 ## Liens utiles
 
