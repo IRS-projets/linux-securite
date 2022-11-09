@@ -24,6 +24,7 @@ Voici la liste des sujets que nous avons choisi pour notre maquette. <br>
 Les sujets sont détaillés pour donner une vue d'ensemble sur l'avancée du groupe dans le projet.
 
 !!! success "SSH"
+    !!! info "Tim travaille sur ce sujet"
      - [x] Faire les configurations
      - [x] Tester le fonctionnement en préproduction
      - [x] Mettre à jour le rapport
@@ -31,17 +32,20 @@ Les sujets sont détaillés pour donner une vue d'ensemble sur l'avancée du gro
      - [ ] *Side-quest*: F2b
 
 !!! fail "DHCP"
+    !!! info "Personne ne travaille sur ce sujet"
      - [ ] Faire les configurations
      - [ ] Tester le fonctionnement en préproduction
      - [ ] Mettre à jour le rapport
 
 !!! fail "DNS"
+    !!! info "Astrid travaille sur le sujet"
      - [ ] Faire les configurations
      - [ ] Tester le fonctionnement en préproduction
      - [ ] Mettre à jour le rapport
           - [ ] Ecrire la documentation
 
 !!! warning "NTP"
+    !!! info "Tim travaille sur le sujet"
     !!! warning inline end "A besoin de DNS"
      - [x] Faire les configurations
      - [ ] Tester le fonctionnement en préproduction
@@ -49,6 +53,7 @@ Les sujets sont détaillés pour donner une vue d'ensemble sur l'avancée du gro
           - [x] Ecrire la documentation
 
 !!! warning "Site web"
+    !!! info "Tim travaille sur le sujet"
      - [x] Faire les configurations
     !!! warning inline end "A besoin de DNS"
      - [ ] Préparer le contenu
@@ -57,6 +62,7 @@ Les sujets sont détaillés pour donner une vue d'ensemble sur l'avancée du gro
      - [ ] *Side-quest*: faire un vrai site en ligne
 
 !!! fail "Proxy cache"
+    !!! info "Personne ne travaille sur ce sujet"
      - [ ] Faire les configurations
     !!! warning inline end "A besoin de NTP"
      - [ ] Tester le fonctionnement en préproduction
@@ -65,6 +71,11 @@ Les sujets sont détaillés pour donner une vue d'ensemble sur l'avancée du gro
 
 !!! example "Nous avons choisi des sujets en rab ou en collaboration!"
     !!! fail "Accès Internet"
+        !!! info "Personne ne travaille sur ce sujet"
+         - En recherche d'un groupe pour collaborer
+    !!! warning "Pare-feu"
+        !!! info "Moha travaille sur ce sujet"
+         - [ ] ?
 
 ## Liens utiles
 
