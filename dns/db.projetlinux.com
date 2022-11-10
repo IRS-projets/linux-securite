@@ -1,15 +1,15 @@
-$TTL 1h
-$ORIGIN .                                  ; base domain-name
-projetlinux.com.         IN      SOA   ns.projetlinux.com. admin.projetlinux.com. (
-                                2022110703 ; serial number (++ with each change)
-                                12h        ; slave refresh
-                                1h         ; retry if refrech failed
-                                2d         ; expiry if refresh failed
-                                1h         ; minimum TTL
+$TTL 1h                                    ; Duree de vie des informations
+$ORIGIN .                                  ; On se base a la racine 
+projetlinux.com.        IN      SOA   ns.projetlinux.com. admin.projetlinux.com. (
+                                2022110701 ; Numero de serie (++ a chaque changement)
+                                12h        ; Slave refresh
+                                1h         ; Nouvel essai en cas de fail refresh
+                                2d         ; Expiration en cas de fail refresh
+                                1h         ; TTL minimum
 )
-                IN      NS      ns.projetlinux.com.   ; NS for this domain
-		IN	NS	ns.projetlinux.com.    ; External NS
-		IN	A       192.169.0.2   ; IP of domain
-ns.projetlinux.com.	 IN      A       192.169.0.2   ; IP of NS
-ntp.projetlinux.com.	IN	A	192.169.0.2  ; IP of NTP
-rapport.projetlinux.com	IN	A	192.169.0.2  ; Rapport subdomain
+                         IN     NS      ns.projetlinux.com. ; NS for this domain
+                         IN     NS      ns.projetlinux.com. ; External NS
+                         IN     A       192.169.0.2         ; IP du domaine
+ns.projetlinux.com.      IN     A       192.169.0.2         ; IP du NS
+ntp.projetlinux.com.     IN     A       192.169.0.2         ; IP du NTP
+rapport.projetlinux.com. IN     A       192.169.0.2         ; Sous-domaine du rapport
