@@ -5,7 +5,7 @@
 Nous devons déployer un serveur NTP local.
 Ce dernier doit distribuer l'heure obtenur auprès d'une source fiable et ne doit pas être modifiable par les clients.
 
-## Solution proposée 
+## Solution proposée
 
 Le serveur NTP répond à ce beosin.
 Nous allons l'implémenter sur la machine respondable du DHCP.
@@ -21,7 +21,7 @@ apt install ntp
 ??? abstract "ntp.conf"
     Modifications effectuées par rapport à la configuration par défaut:
 
-     - Ajout du serveur ntp.uvsq.fr 
+     - Ajout du serveur ntp.uvsq.fr
      - Broadcast configurée sur 192.169.255.255
      - Désactivation des pools (on fait confiance au NTP de notre fac :smile:)
 
@@ -43,7 +43,7 @@ apt install ntp
 
 
     # You do need to talk to an NTP server or two (or three).
-    server ntp.uvsq.fr 
+    server ntp.uvsq.fr
 
     # pool.ntp.org maps to about 1000 low-stratum NTP servers.  Your server will
     # pick a different set every time it starts up.  Please consider joining the
@@ -87,9 +87,14 @@ apt install ntp
     #disable auth
     #broadcastclient
     ```
-    
+
 Redémarrage du service pour prendreles modifications en compte:
 
 ```
 systemctl reload ntp
 ```
+
+## Sources
+
+ - [Wiki ubuntu-fr](https://doc.ubuntu-fr.org/ntp)
+ - [RENATER](https://services.renater.fr/ntp/serveurs_francais)
