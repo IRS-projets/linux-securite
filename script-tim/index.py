@@ -4,24 +4,25 @@
 
 def Draw_Graph(values, type):
     max_height = 100
-    if type == "processor":
+    color = ["black", "black"]
+    if type == 1:
         color = ["lightblue", "blue"]
-    if type == "memory":
+    if type == 2:
         color = ["pink", "purple"]
-    if type == "disk":
+    if type == 3:
         color = ["lightgreen", "green"]
-    for x in range(60):
+    for x in range(len(values)):
         value = values[x]
         if value == no_data:
-            print('''div class="no_data"></div>''')
+            print('''<div class="no_data"></div>''')
         if value == 0:
             print('''<div class="bar" style="height: 0px; margin-top: ''' +
-                  max_height + '''px;">''')
+                  str(max_height) + '''px;"></div>''')
         if value > 0:
-            height = (index/100) * max_height
+            height = (value/100) * max_height
             margin = max_height - height
             print('''<div class="bar" style="height:''' + str(height) + '''px; margin-top: ''' +
-                  str(margin) + '''px; background: ''' + str(color[0]) + '''; border-color: ''' + str(color[1]) + '''">''')
+                  str(margin) + '''px; background: ''' + str(color[0]) + '''; border-color: ''' + str(color[1]) + '''"></div>''')
 
 # Definitions
 # No_data value
@@ -81,17 +82,23 @@ print('''
             <div class="metric">
                 Processor: X%
                 <div class="graph">
-                ''' + Draw_Graph(processor, "processor") + '''</div>
+                ''')
+Draw_Graph(processor, 1)
+print('''</div>
             </div>
             <div class="metric">
                 Memory: X%
                 <div class="graph">
-                ''' + Draw_Graph(memory, "memory") + '''</div>
+                ''')
+Draw_Graph(memory, 2)
+print('''</div>
             </div>
             <div class="metric">
                 Disk: X%
                 <div class="graph">
-                ''' + Draw_Graph(disk, "disk") + '''</div>
+                ''')
+Draw_Graph(disk, 3)
+print('''</div>
             </div>
         </div>
     </div>
