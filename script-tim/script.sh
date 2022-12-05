@@ -2,13 +2,13 @@
 
 # Fichier contenant les releves
 #file="/var/www/html/projetlinux.com/database"
-file="temp"
+file="/var/www/html/projetlinux.com/script/fichier"
 
 ### Recueil et conversion en % des informations
 # Date au format hh:mm:ss
-date=$(date +"%T")
+date=$(date +"%s")
 # Processeur: 100 - taux de repos
-processor=$(mpstat | awk '$12 ~ /[0-9.]+/ { print 100 - $12 }')
+processor=$(mpstat | awk '$12 ~ /[0-9.]+/ { print 100 - $12 }' | cut -d "," -f 1)
 # Memoire disponible
 memoryTotal=$(free | awk 'NR==2{ print $2}')
 # Memoire utilisee
@@ -22,4 +22,4 @@ disk=$(df -t ext4 | awk 'NR==2{ print $5}' | grep -Eo '[0-9]{1,3}')
 # Ligne de log
 echo "${date};${processor};${memory};${disk}" >> $file
 # Troncature du fichier
-echo "$(tail -n 120 $file)" > $file
+echo "$(tail -n 60 $file)" > $file
