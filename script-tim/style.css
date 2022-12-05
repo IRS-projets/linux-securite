@@ -4,7 +4,6 @@ body {
 }
 
 .winwow {
-    background: white;
     width: 600px;
     border-radius: 10px;
     border: 1px solid grey;
@@ -64,5 +63,10 @@ body {
     width: 1.666%;
     height: 100px;
     float: left;
-    background-image: linear-gradient(to top, #dddddd, transparent);
+    background-image: linear-gradient(to top, #ededed, transparent);
 }
+
+.no_data:hover {
+    opacity: 50%;
+}
+	
