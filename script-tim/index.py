@@ -50,17 +50,18 @@ with open("fichier", 'r') as file:
         measures_quantity += 1
 
 # Assigning values to the display arrays
-for x in range(0, measures_quantity):
+for x in range(0, measures_quantity-1):
     # Adding "holes" if measures where skipped
     if x > 0:
         y = 0
-        while measures[x][0] > measures[x-1][0] + 60 + 60*y:
+        while measures[x][0] > measures[x-1][0] + 60 + 62*y:
             y += 1
             index += 1
-    processor[index] = measures[x][1]
-    memory[index] = measures[x][2]
-    disk[index] = measures[x][3]
-    index += 1
+    if index < 60:
+        processor[index] = measures[x][1]
+        memory[index] = measures[x][2]
+        disk[index] = measures[x][3]
+        index += 1
 
 print("Content-type: text/html\n\n")
 print('''
@@ -76,25 +77,25 @@ print('''
 <body>
     <div class="winwow">
         <div class="window_header">
-            <button class="custom_button">Reload</button>
+            <button class="custom_button" onClick="window.location.reload(true)">Reload</button>
         </div>
         <div class="window_content">
             <div class="metric">
-                Processor: X%
+                Processor: ''' + str(processor[59]) + '''%
                 <div class="graph">
                 ''')
 Draw_Graph(processor, 1)
 print('''</div>
             </div>
             <div class="metric">
-                Memory: X%
+                Memory: ''' + str(memory[59]) + '''%
                 <div class="graph">
                 ''')
 Draw_Graph(memory, 2)
 print('''</div>
             </div>
             <div class="metric">
-                Disk: X%
+                Disk: ''' + str(disk[59]) + '''%
                 <div class="graph">
                 ''')
 Draw_Graph(disk, 3)
