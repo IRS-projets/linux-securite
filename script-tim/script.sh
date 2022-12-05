@@ -20,6 +20,6 @@ disk=$(df -t ext4 | awk 'NR==2{ print $5}' | grep -Eo '[0-9]{1,3}')
 
 ### Ecriture du fichier
 # Ligne de log
-echo "${date};${processor};${memory};${disk}" >> $file
+echo "${date};${processor};${memory};${disk};" >> $file
 # Troncature du fichier
 echo "$(tail -n 60 $file)" > $file
