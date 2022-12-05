@@ -41,3 +41,6 @@ Restart the conf :
 
 sudo systemctl restart squid
 
+
+
+
