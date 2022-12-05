@@ -50,3 +50,8 @@ iface eth0 inet dhcp
 
 # BIG TODO CHECK INFO + CLEAN
 BIG FLEMME CAR JE SUIS UNE FLEMMARDES
+
+
+######## 
+PC de Chris sert de passerelle entre la wifi et notre sous réseau
+(attention ça déco wesh troll pas )
