@@ -1,12 +1,12 @@
 Install Squid Package on Ubuntu:   
-sudo apt-get install squid
+==udo apt-get install squid==
 
 Configuring Squid Proxy Server:
-1. The Squid configuration file is found at /etc/squid/squid.conf  ===> sudo vim /etc/squid/squid.conf
-2. Navigate to find the http_port option. Typically, this is set to listen on Port 3128. This port usually carries TCP traffic.
+1. The Squid configuration file is found at /etc/squid/squid.conf  ===> ==sudo vim /etc/squid/squid.conf==
+2. Navigate to find the http_port option. Typically, this is set to listen on Port ==3128==. This port usually carries TCP traffic.
 3. Navigate to the http_access deny all option. This is currently configured to block all HTTP traffic. This means no web traffic is allowed.
 
-Change this to the following:
+==Change this to the following==
 
 http_access allow all
 
@@ -22,7 +22,7 @@ Add squid ACL et Block Websites on Squid Proxy:
 # INSERT YOUR OWN RULE(S) HERE TO ALLOW ACCESS FROM YOUR CLIENTS
 #
 include /etc/squid/conf.d/*
-
+==Ajouter ces 4 ligne dans votre fichier de conf==
 acl localnet src 10.0.2.15 (ton IP)
 acl liste_url dstdomain "/etc/squid/liste-sites.txt"
 http_access deny liste_url
@@ -30,7 +30,7 @@ http_access allow localnet
 
 Création de la liste des sites Blacklisté : 
 
- vim "/etc/squid/liste-sites.txt" 
+ ==m "/etc/squid/liste-sites.txt"== 
 
 .facebook.com
 .youtube.com
@@ -39,7 +39,7 @@ Création de la liste des sites Blacklisté :
 
 Restart the conf : 
 
-sudo systemctl restart squid
+==sudo systemctl restart squid==
 
 
 
