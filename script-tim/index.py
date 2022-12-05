@@ -50,12 +50,11 @@ with open("fichier", 'r') as file:
         measures_quantity += 1
 
 # "Deleting" measures that are more than an hour old
-x = 0
-while measures[x][0]<int(time.time())-60*60 and index < 58:
-    x += 1
-    index += 1
+y = 0
+while measures[y][0]<int(time.time())-60*60 and y < 58:
+    y += 1
 # Assigning values to the display arrays
-for x in range(0, measures_quantity-1):
+for x in range(y, measures_quantity-1):
     # Adding "holes" if measures where skipped
     if x > 0:
         y = 0
