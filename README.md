@@ -38,7 +38,7 @@ Ainsi, voici les choix sur lesquels les membres se sont accordés:
  - [ ] Partage de fichiers
  - [x] Site web
  - [ ] Base de données
- - [ ] Pare-feu
+ - [x] Pare-feu
  - [ ] Annuaire
  - [ ] Supervision
  - [ ] VPN
