@@ -1,13 +1,14 @@
 site_name: Projet Linux
-site_description: Notre projet d'études
+site_description: C'EST NOTRE PROJET!
 site_author: Tim FROLOV
 copyright: Copyright &copy; 2022 Projet Linux
 
 nav:
-    - Home: index.md
+    - Acceuil: index.md
     - Procédures:
         - SSH: ssh.md
         - NTP: ntp.md
+        - DNS: dns.md
 
 theme:
     name: 'material'
