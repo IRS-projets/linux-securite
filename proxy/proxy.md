@@ -6,7 +6,7 @@ Nous devons réduir l'utilisation de la bande passante on doit interdire l'accè
 
 ## Solution proposée
 
-### Installer le paquet Squid sur Ubuntu: 
+!!! abstract "Installation du serveur proxy"
  
  `sudo apt-get install squid`
 
@@ -29,12 +29,12 @@ ligne 1416,
 
 ??? abstract "squid_config"  
        - A partir "include /etc/squid/conf.d/" (ligne 1402) . Ajouter dans le fichier de conf 
-    ```bash title="/etc/squid/squid.conf" linenums="1"
+        ```bash title="/etc/squid/squid.conf" linenums="1"
         acl localnet src 10.0.2.15 (IP du serveur)
         acl liste_url dstdomain "/etc/squid/liste-sites.txt"
         http_access deny liste_url
         http_access allow localnet
-    ```
+        ```
 
 ### Création de la liste des sites Blacklisté : 
 
@@ -42,10 +42,10 @@ ligne 1416,
     - dans le répertoire /etc/squid/ 
     - créer un fichier texte
 
-    ```bash title="/etc/squid/liste-sites.txt" linenums="1"
+        ```bash title="/etc/squid/liste-sites.txt" linenums="1"
         .facebook.com
         .youtube.com
-    ```
+        ```
 
 
 ### Redémarrer le service: 
