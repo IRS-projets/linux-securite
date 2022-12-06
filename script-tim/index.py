@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-#import time
+import time
 
 def Draw_Graph(values, type):
     max_height = 100
@@ -49,18 +49,25 @@ with open("fichier", 'r') as file:
         measures.append(content_int)
         measures_quantity += 1
 
+# "Deleting" measures that are more than an hour old
+y = 0
+while measures[y][0]<int(time.time())-60*60 and y < 58:
+    y += 1
 # Assigning values to the display arrays
-for x in range(0, measures_quantity):
+for x in range(y, measures_quantity-1):
     # Adding "holes" if measures where skipped
     if x > 0:
         y = 0
-        while measures[x][0] > measures[x-1][0] + 60 + 60*y:
+        while measures[x][0] > measures[x-1][0] + 65 + 60*y:
             y += 1
             index += 1
-    processor[index] = measures[x][1]
-    memory[index] = measures[x][2]
-    disk[index] = measures[x][3]
-    index += 1
+    if index < 60:
+        processor[index] = measures[x][1]
+        memory[index] = measures[x][2]
+        disk[index] = measures[x][3]
+        index += 1
+    else:
+        break
 
 print("Content-type: text/html\n\n")
 print('''
@@ -76,25 +83,25 @@ print('''
 <body>
     <div class="winwow">
         <div class="window_header">
-            <button class="custom_button">Reload</button>
+            <button class="custom_button" onClick="window.location.reload(true)">Reload</button>
         </div>
         <div class="window_content">
             <div class="metric">
-                Processor: X%
+                Processor: ''' + str(processor[index-1]) + '''%
                 <div class="graph">
                 ''')
 Draw_Graph(processor, 1)
 print('''</div>
             </div>
             <div class="metric">
-                Memory: X%
+                Memory: ''' + str(memory[index-1]) + '''%
                 <div class="graph">
                 ''')
 Draw_Graph(memory, 2)
 print('''</div>
             </div>
             <div class="metric">
-                Disk: X%
+                Disk: ''' + str(disk[index-1]) + '''%
                 <div class="graph">
                 ''')
 Draw_Graph(disk, 3)
