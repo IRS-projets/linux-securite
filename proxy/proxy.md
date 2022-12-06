@@ -28,6 +28,7 @@ ligne 1416,
 ### Ajouter squid ACL et Bloquer les sites Web sur Squid Proxy :
 
 ??? abstract "squid_config"  
+
     - A partir "include /etc/squid/conf.d/" (ligne 1402)
     - Ajouter dans le fichier de conf
 
@@ -41,6 +42,7 @@ ligne 1416,
 ### Création de la liste des sites Blacklisté : 
 
 ??? abstract "sites_blacklist"
+
     - dans le répertoire /etc/squid/ 
     - créer un fichier texte
 
