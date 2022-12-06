@@ -3,7 +3,7 @@
 
 ## Install Squid Package on Ubuntu: 
  
-*udo apt-get install squid*
+*sudo apt-get install squid*
 
 ### Configuring Squid Proxy Server:
 
