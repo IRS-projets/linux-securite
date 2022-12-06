@@ -1,13 +1,18 @@
-# squid proxy
+# Proxy Squid
 
+## Cahier des charges
 
-## Install Squid Package on Ubuntu: 
+Nous devons réduir l'utilisation de la bande passante on doit interdire l'accès à certains sites.
+
+## Solution proposée
+
+### Installer le paquet Squid sur Ubuntu: 
  
-*sudo apt-get install squid*
+ `sudo apt-get install squid`
 
-### Configuring Squid Proxy Server:
+### Configurer le serveur proxy Squid:
 
-Le fichier de configuration de Squid se trouve à #/etc/squid/squid.conf  ===> *sudo vim /etc/squid/squid.conf*
+Le fichier de configuration de Squid se trouve à /etc/squid/squid.conf  ===> `sudo vim /etc/squid/squid.conf`
 
 Naviguez pour trouver l'option http_port. En règle générale, il est configuré pour écouter sur le port ==3128==. Ce port transporte généralement le trafic TCP.
 Accédez à l'option http_access deny all. Ceci est actuellement configuré pour bloquer tout le trafic HTTP. Cela signifie qu'aucun trafic Web n'est autorisé.
@@ -16,43 +21,38 @@ Accédez à l'option http_access deny all. Ceci est actuellement configuré pour
 
 - remplacer deny par allow 
 
-*http_access allow all*
+ligne 1416,
+`http_access allow all` 
 
 
-#### Ajouter squid ACL et Bloquer les sites Web sur Squid Proxy :
- 
-cherchez cette ligne *include /etc/squid/conf.d/* et ajouter les 4 lignes (37- 40 en dessous) dans le fichier de conf 
+### Ajouter squid ACL et Bloquer les sites Web sur Squid Proxy :
 
-# We strongly recommend the following be uncommented to protect innocent
-# web applications running on the proxy server who think the only
-# one who can access services on "localhost" is a local user
-#http_access deny to_localhost
+??? abstract "squid_config"  
+       - A partir "include /etc/squid/conf.d/" (ligne 1402) . Ajouter dans le fichier de conf 
+    ```bash title="/etc/squid/squid.conf" linenums="1"
+        acl localnet src 10.0.2.15 (IP du serveur)
+        acl liste_url dstdomain "/etc/squid/liste-sites.txt"
+        http_access deny liste_url
+        http_access allow localnet
+    ```
 
-#
-# INSERT YOUR OWN RULE(S) HERE TO ALLOW ACCESS FROM YOUR CLIENTS
-#
-include /etc/squid/conf.d/*
-*Ajouter ces 4 ligne dans votre fichier de conf*
+### Création de la liste des sites Blacklisté : 
 
-acl localnet src 10.0.2.15 (ton IP)
-acl liste_url dstdomain "/etc/squid/liste-sites.txt"
-http_access deny liste_url
-http_access allow localnet
+??? abstract "sites_blacklist"
+    - dans le répertoire /etc/squid/ 
+    - créer un fichier texte
 
-##### Création de la liste des sites Blacklisté : 
-
- *"/etc/squid/liste-sites.txt"* 
-
-*.facebook.com*
-*.youtube.com*
+    ```bash title="/etc/squid/liste-sites.txt" linenums="1"
+        .facebook.com
+        .youtube.com
+    ```
 
 
+### Redémarrer le service: 
 
-###### Restart the conf : 
+`sudo systemctl restart squid`
 
-*sudo systemctl restart squid*
-
-####### Configurer le proxy HTTP pour fonctionner avec le navigateur Mozilla Firefox:
+## Configurer le proxy HTTP pour fonctionner avec le navigateur Mozilla Firefox:
 
 - Open Firefox Mozilla
 - en haut > Settings
