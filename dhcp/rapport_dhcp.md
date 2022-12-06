@@ -1,57 +1,56 @@
-DHCP
+# DHCP
+
+## Cahier des charges:
+  A faire
+
+## Solution proposée
+
+### Installation
+`sudo apt install isc-dhcp-server`
+`sudo apt install net-tools`
+
+###
+
+  ```bash title="/etc/dhcp/dhcpd.conf" linenums="1"
+    default-lease-time 86400;
+    max-lease-time 172800;
+    subnet 192.169.0.0 netmask 255.255.0.0 {
+	  range			192.169.0.3 192.169.0.254;
+	  option routers		192.169.0.2;
+    } 
+
+   log-facility local0;
+  ```
+
+Il faut redémarrer le service pour que les modifications soient prises en compte
+en mode super utilisateur :
+  `service isc-dhcp-server restarts`
 
 
-Part Domain (useless ?)
-domain name: projetlinux.com 
-IP adress : 192.169.0.2 
-subnet : 192.169.0.0 
-netmask : 255.255.0.0
+### Partie Client
+
+  - Si on veut définir un client avec une adresse statique
+  - On connait l'adresse MAC avec `ip a`
+  
+  ```bash title="/etc/dhcp/dhcpd.conf" linenums="1"
+    host host_name{
+      hardware ethernet X:X:X:X:X:X;
+      fixed-address Y:Y:Y:Y;
+    }
+  ```
 
 
-sudo apt install isc-dhcp-server
-sudo apt install net-tools
-
-subnet 192.169.0.0 netmask 255.255.0.0 {
-}
-
-si on passe par un routeur router:
-subnet 192.169.0.0 netmask 255.255.255.0 {
-  range 192.169.0.0 192.168.0.254;  # BALEK
-  option routers router;
-}
-
-fichier de conf:
-/etc/dhcp/dhcpd.conf
-
-
-(mode root) service isc-dhcp-server restarts
-
-
-# config avancée ?
-
-
-Part client: 
-
-host name : todoname (why not)
-IP adress : 192.169.0.6
-MAC adress : 08:00:27:49:21:01 (ma vm)
-    obtenu avec ifconfig -> enp0s3 -> ether 
-
-
-# L'interface réseau « loopback » (toujours requise)
+### L'interface réseau « loopback » (toujours requise)
 auto lo
 iface lo inet loopback
 
-# Obtenir l'adresse IP de n'importe quel serveur DHCP
-auto eth0
-iface eth0 inet dhcp
+### Configurer interface du pc de Chris
+  - Le pc de Chris sert de passerelle 
 
-
-
-# BIG TODO CHECK INFO + CLEAN
-BIG FLEMME CAR JE SUIS UNE FLEMMARDES
-
-
-######## 
-PC de Chris sert de passerelle entre la wifi et notre sous réseau
-(attention ça déco wesh troll pas )
+```bash title="/etc/network/interfaces" linenums="1"
+  auto enp0s3
+    iface enp0s3 inet static
+    address 192.169.0.1
+    netmask 192.169.0.0
+    broadcast 192.169.255.255
+  ```
