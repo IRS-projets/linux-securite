@@ -60,3 +60,7 @@ On vérifie la configuration avec la commande `dig` (en local seulement, le doma
 ```
 dig @localhost projetlinux.com
 ```
+
+## Sources
+
+ - [Wiki debian-fr](https://wiki.debian.org/fr/Bind9)
