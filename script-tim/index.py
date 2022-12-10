@@ -16,8 +16,7 @@ def Draw_Graph(values, type):
         if value == no_data:
             print('''<div class="no_data"></div>''')
         if value == 0:
-            print('''<div class="bar" style="height: 0px; margin-top: ''' +
-                  str(max_height) + '''px;"></div>''')
+            print('''<div class="bar" style="height: 0px; margin-top: ''' + str(max_height) + '''px; background: ''' + str(color[0]) + '''; border-color: ''' + str(color[1]) + '''"></div>''')
         if value > 0:
             height = (value/100) * max_height
             margin = max_height - height
