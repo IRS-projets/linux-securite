@@ -9,7 +9,7 @@ nav:
         - SSH: ssh.md
         - NTP: ntp.md
         - DNS: dns.md
-        - Script: script.md
+    - Script: http://projetlinux.site/script/index.py
 
 theme:
     name: 'material'
