@@ -55,7 +55,7 @@ Configuration:
      - Désactivation de l'authentification PAM (ne sera pas utilisé pour ce projet)
      - Désactivation du forwarding SSH (pour plus de sécurité)
      - Désactivation du forwarding TCP (pour plus de sécurité)
-     - Ajout des banières
+     - Ajout des banières (pour plus de SWAG)
 
     ```bash title="/etc/ssh/sshd_config" linenums="1"
     #	$OpenBSD: sshd_config,v 1.103 2018/04/09 20:41:22 tj Exp $
@@ -206,7 +206,7 @@ Configuration:
 
 ???abstract "SSH"
     ```title="/etc/ssh/banner" linenums="1"
-    Cette machine est responsable des services SSH, DNS et web.
+    Cette machine est responsable des services SSH, DNS, NTP et web.
     ```
 
 ## Sources
