@@ -15,8 +15,8 @@
     default-lease-time 86400;
     max-lease-time 172800;
     subnet 192.169.0.0 netmask 255.255.0.0 {
-	  range			192.169.0.3 192.169.0.254;
-	  option routers		192.169.0.2;
+	  range			192.169.0.10 192.169.0.254;
+	  option routers		192.169.0.1;
     }
 
    log-facility local0;
@@ -24,7 +24,7 @@
 
 Il faut redémarrer le service pour que les modifications soient prises en compte
 en mode super utilisateur :
-  `service isc-dhcp-server restarts`
+  `service isc-dhcp-server restart`
 
 
 ### Partie Client
