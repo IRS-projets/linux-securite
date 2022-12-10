@@ -47,7 +47,15 @@ sudo apt install bind9
     rapport.projetlinux.com. IN     A       192.169.0.2         ; Sous-domaine du rapport
     ```
 
-Vérification avec `dig` (en local seulement, le domaine n'existant pas sur Internet):
+## Vérification de la configuration
+
+Installation:
+
+```
+sudo apt install bind9
+```
+
+On vérifie la configuration avec la commande `dig` (en local seulement, le domaine n'existant pas sur Internet):
 
 ```
 dig @localhost projetlinux.com
