@@ -8,6 +8,7 @@ nav:
         - Page de garde: index.md
         - Sujets choisis: choix.md
     - Services:
+        - NAT: nat.md
         - SSH: ssh.md
         - DHCP: dhcp.md
         - DNS: dns.md
