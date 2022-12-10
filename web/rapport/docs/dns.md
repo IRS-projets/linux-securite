@@ -52,7 +52,7 @@ sudo apt install bind9
 Installation:
 
 ```
-sudo apt install bind9
+sudo apt install dnsutils
 ```
 
 On vérifie la configuration avec la commande `dig` (en local seulement, le domaine n'existant pas sur Internet):
