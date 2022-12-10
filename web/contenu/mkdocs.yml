@@ -4,11 +4,12 @@ site_author: Tim FROLOV
 copyright: Copyright &copy; 2022 Projet Linux
 
 nav:
-    - Acceuil: index.md
+    - Accueil: index.md
     - Procédures:
         - SSH: ssh.md
         - NTP: ntp.md
         - DNS: dns.md
+        - Script: script.md
 
 theme:
     name: 'material'
