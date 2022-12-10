@@ -5,7 +5,7 @@
 file="/var/www/html/projetlinux.com/script/fichier"
 
 ### Recueil et conversion en % des informations
-# Date au format hh:mm:ss
+# Date au format ssss
 date=$(date +"%s")
 # Processeur: 100 - taux de repos
 processor=$(mpstat | awk '$12 ~ /[0-9.]+/ { print 100 - $12 }' | cut -d "," -f 1)
