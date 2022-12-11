@@ -47,17 +47,15 @@ with open("fichier", 'r') as file:
                        int(content_txt[2]), int(content_txt[3])]
         measures.append(content_int)
         measures_quantity += 1
-
 # "Deleting" measures that are more than an hour old
 y = 0
-while measures[y][0]<int(time.time())-60*60 and y < 58:
+while measures[y][0]<int(time.time())-60*60 and y < 60:
     y += 1
 # Assigning values to the display arrays
-for x in range(y, measures_quantity-1):
+for x in range(y, measures_quantity):
     # Adding "holes" if measures where skipped
     if x > 0:
-        y = 0
-        while measures[x][0] > measures[x-1][0] + 65 + 60*y:
+        while measures[x][0] > measures[x-1][0] + 65 + 60*y and y < 60:
             y += 1
             index += 1
     if index < 60:
