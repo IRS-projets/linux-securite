@@ -3,11 +3,14 @@
 ## Cahier des charges
 
 Nous devons réduir l'utilisation de la bande passante on doit interdire l'accès à certains sites.
+Squid prend en charge les protocoles http.
 
 ## Solution proposée
 
-!!! abstract "Installation du serveur proxy"
- 
+Nous estimons que notre solution devrait diminuer notre consommation de bande passante si on aura des dizaine de machines prochainement.
+on a chaoisi la categorie "streming media application" le service de youtube et facebook.
+
+ "Installation du serveur proxy" 
  `sudo apt-get install squid`
 
 ### Configurer le serveur proxy Squid:
@@ -27,7 +30,7 @@ ligne 1416,
 
 ### Ajouter squid ACL et Bloquer les sites Web sur Squid Proxy :
 
-??? abstract "squid_config"  
+ "squid_config"  
 
     - A partir "include /etc/squid/conf.d/" (ligne 1402)
     - Ajouter dans le fichier de conf
@@ -41,7 +44,7 @@ ligne 1416,
 
 ### Création de la liste des sites Blacklisté : 
 
-??? abstract "sites_blacklist"
+ "sites_blacklist"
 
     - dans le répertoire /etc/squid/ 
     - créer un fichier texte
