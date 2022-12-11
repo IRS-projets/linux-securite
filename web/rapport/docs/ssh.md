@@ -12,7 +12,7 @@ Cette connexion doit répondre aux critères suivants:
 
 ## Solution proposée
 
-Nous estimons que notre solution devra aménager une dixaine d'hôtes au maximum et supporter quelques connexions simultanées sans transfert de données important (lecture / écriture / téléchargement de fichiers texte).
+Nous estimons que notre solution devra aménager une dizaine d'hôtes au maximum et supporter quelques connexions simultanées sans transfert de données important (lecture / écriture / téléchargement de fichiers texte).
 
 ### Choix matériels et logiciels
 
@@ -47,18 +47,18 @@ Configuration:
      - Passage au port 2022 (pour réduire les attaques bruteforce par script)
      - Interdiction de l'IPv6 (parce qu'on en aura pas besoin pour ce projet)
      - Force un échange de clés au bout de 5 minutes (pour plus de sécurité)
-     - Réduction du temps d'authentification à 1 minute (our diminuer le risque de DOS)
+     - Réduction du temps d'authentification à 1 minute (pour diminuer le risque de DOS)
      - Désactivation du login root (pour plus de sécurité)
      - Diminution de la quantité de tentatives de login à 2 par session (pour que chaque 2e échec soit logué - ceci sera utilisé par f2b)
-     - Réduction de la quantité de sessions à 2 par hôte (pour limiter les tentatives de bruteforce). On autorisse 2 sessions pour pouvoir garder une session de "sécurité" affin d'éviter de perdre le contrôle de la machine en cas d'erreur de configuration (SSH, firewall etc)
+     - Réduction de la quantité de sessions à 2 par hôte (pour limiter les tentatives de bruteforce). On autorise 2 sessions pour pouvoir garder une session de "sécurité" afin d'éviter de perdre le contrôle de la machine en cas d'erreur de configuration (SSH, firewall etc)
      - interdiction de login par mot de passe (pour plus de sécurité)
      - Désactivation de l'authentification PAM (ne sera pas utilisé pour ce projet)
      - Désactivation du forwarding SSH (pour plus de sécurité)
      - Désactivation du forwarding TCP (pour plus de sécurité)
-     - Ajout des banières (pour plus de SWAG)
+     - Ajout des bannières (pour plus de SWAG)
 
     ```bash title="/etc/ssh/sshd_config" linenums="1"
-    #	$OpenBSD: sshd_config,v 1.103 2018/04/09 20:41:22 tj Exp $
+    #   $OpenBSD: sshd_config,v 1.103 2018/04/09 20:41:22 tj Exp $
 
     # This is the sshd server system-wide configuration file.  See
     # sshd_config(5) for more information.
@@ -99,7 +99,7 @@ Configuration:
     #PubkeyAuthentication yes
 
     # Expect .ssh/authorized_keys2 to be disregarded by default in future.
-    #AuthorizedKeysFile	.ssh/authorized_keys .ssh/authorized_keys2
+    #AuthorizedKeysFile .ssh/authorized_keys .ssh/authorized_keys2
 
     #AuthorizedPrincipalsFile none
 
@@ -173,14 +173,14 @@ Configuration:
     AcceptEnv LANG LC_*
 
     # override default of no subsystems
-    Subsystem	sftp	/usr/lib/openssh/sftp-server
+    Subsystem   sftp    /usr/lib/openssh/sftp-server
 
     # Example of overriding settings on a per-user basis
     #Match User anoncvs
-    #	X11Forwarding no
-    #	AllowTcpForwarding no
-    #	PermitTTY no
-    #	ForceCommand cvs server
+    #   X11Forwarding no
+    #   AllowTcpForwarding no
+    #   PermitTTY no
+    #   ForceCommand cvs server
     ```
 
 ### Configuration des la banières
@@ -208,7 +208,7 @@ Configuration:
     ```title="/etc/ssh/banner" linenums="1"
     Cette machine est responsable des services SSH, DNS, NTP et web.
     ```
-
+ 
 ## Sources
 
  - [OpenSSH](https://www.openssh.com/)
