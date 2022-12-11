@@ -62,7 +62,6 @@ De ce fait, nous nous rendons dans le fichier /etc/default/isc-dhcp-server
   ```bash title="/etc/default/isc-dhcp-server" linenums="1"
 	DHCPDv4_CONF=etc/dhcp/dhcpd.conf
 	INTERFACESv4 = "enp0s3"
-    }
   ```
  
 ### L'interface réseau « loopback » (toujours requise)
