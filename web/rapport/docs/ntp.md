@@ -1,50 +1,50 @@
 # NTP
-
+ 
 ## Cahier des charges
-
+ 
 Nous devons déployer un serveur NTP local.
 Ce dernier doit distribuer l'heure obtenue auprès d'une source fiable et ne doit pas être modifiable par les clients.
-
+ 
 ## Solution proposée
-
-Le serveur NTP répond à ce beosin.
-Nous allons l'implémenter sur la machine respondable du DHCP.
-
+ 
+Le serveur NTP répond à ce besoin.
+Nous allons l'implémenter sur la machine responsable du DHCP.
+ 
 ## Implémentation
-
+ 
 Installation:
-
+ 
 ```
 apt install ntp
 ```
-
+ 
 ??? abstract "ntp.conf"
     Modifications effectuées par rapport à la configuration par défaut:
-
+ 
      - Ajout du serveur ntp.uvsq.fr
      - Broadcast configurée sur 192.169.255.255
      - Désactivation des pools (on fait confiance au NTP de notre fac :smile:)
-
+ 
     ```bash title="/etc/ntp.conf" linenums="1"
     # /etc/ntp.conf, configuration for ntpd; see ntp.conf(5) for help
-
+ 
     driftfile /var/lib/ntp/ntp.drift
-
+ 
     # Leap seconds definition provided by tzdata
     leapfile /usr/share/zoneinfo/leap-seconds.list
-
+ 
     # Enable this if you want statistics to be logged.
     #statsdir /var/log/ntpstats/
-
+ 
     statistics loopstats peerstats clockstats
     filegen loopstats file loopstats type day enable
     filegen peerstats file peerstats type day enable
     filegen clockstats file clockstats type day enable
-
-
+ 
+ 
     # You do need to talk to an NTP server or two (or three).
     server ntp.uvsq.fr
-
+ 
     # pool.ntp.org maps to about 1000 low-stratum NTP servers.  Your server will
     # pick a different set every time it starts up.  Please consider joining the
     # pool: <http://www.pool.ntp.org/join.html>
@@ -52,8 +52,8 @@ apt install ntp
     #pool 1.debian.pool.ntp.org iburst
     #pool 2.debian.pool.ntp.org iburst
     #pool 3.debian.pool.ntp.org iburst
-
-
+ 
+ 
     # Access control configuration; see /usr/share/doc/ntp-doc/html/accopt.html for
     # details.  The web page <http://support.ntp.org/bin/view/Support/AccessRestrictions>
     # might also be helpful.
@@ -61,40 +61,41 @@ apt install ntp
     # Note that "restrict" applies to both servers and clients, so a configuration
     # that might be intended to block requests from certain clients could also end
     # up blocking replies from your own upstream servers.
-
+ 
     # By default, exchange time with everybody, but don't allow configuration.
     restrict -4 default kod notrap nomodify nopeer noquery limited
     restrict -6 default kod notrap nomodify nopeer noquery limited
-
+ 
     # Local users may interrogate the ntp server more closely.
     restrict 127.0.0.1
     restrict ::1
-
+ 
     # Needed for adding pool entries
     #restrict source notrap nomodify noquery
-
+ 
     # Clients from this (example!) subnet have unlimited access, but only if
     # cryptographically authenticated.
     #restrict 192.168.123.0 mask 255.255.255.0 notrust
-
-
+ 
+ 
     # If you want to provide time to your local subnet, change the next line.
     # (Again, the address is an example only.)
     broadcast 192.169.255.255
-
+ 
     # If you want to listen to time broadcasts on your local subnet, de-comment the
     # next lines.  Please do this only if you trust everybody on the network!
     #disable auth
     #broadcastclient
     ```
-
-Redémarrage du service pour prendreles modifications en compte:
-
+ 
+Redémarrage du service pour prendre les modifications en compte:
+ 
 ```
 systemctl reload ntp
 ```
-
+ 
 ## Sources
-
+ 
  - [Wiki ubuntu-fr](https://doc.ubuntu-fr.org/ntp)
  - [RENATER](https://services.renater.fr/ntp/serveurs_francais)
+ 
