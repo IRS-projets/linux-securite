@@ -17,14 +17,16 @@ Installation:
 ```
 sudo apt install bind9
 ```
- 
+ Notre serveur DNS s'appelle projetlinux.com et à pour IP 192.169.0.2. 
+ Dans notre cas, nous n'avons pas de serveur "esclave".
+
 ??? abstract "Configuration de la zone DNS à servir"
     ``` linenums="1" title="/etc/bind/named.conf.local"
     zone "projetlinux.com" {
         type master;
         file "/etc/bind/db.projetlinux.com";
-        // allow-transfer {bbackup.projet.com;}; // List slaves here
-        // notify yes; // Notify slaves on change
+        // allow-transfer {bbackup.projet.com;};  // List slaves here
+        // notify yes;  // Notify slaves on change
     };
     ```
  
