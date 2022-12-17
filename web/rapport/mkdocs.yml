@@ -1,0 +1,87 @@
+site_name: Rapport
+site_description: Le rapport de NOTRE PROJET
+site_author: Tim FROLOV
+copyright: Copyright &copy; 2022 Projet Linux
+
+nav:
+    - Accueil:
+        - Page de garde: index.md
+        - Sujets choisis: choix.md
+    - Services:
+        - NAT: nat.md
+        - SSH: ssh.md
+        - DHCP: dhcp.md
+        - DNS: dns.md
+        - NTP: ntp.md
+        - Web: web.md
+        - Proxy: proxy.md
+        - Pare-feu: firewall.md
+    - Collaboration: collaboration.md
+    - Script: script.md
+
+theme:
+    name: 'material'
+    language: fr
+    icon:
+        logo: material/penguin
+        repo: fontawesome/brands/github
+    #favicon: images/skull-scan.png
+    palette:
+        scheme: slate
+        primary: orange
+        accent: amber
+    font:
+        text: Roboto
+        code: Roboto Mono
+    features:
+        - content.code.annotate
+        - content.tabs.link
+        - content.tooltips
+        - navigation.instant
+        - navigation.tracking
+        - navigation.tabs
+        - navigation.top
+        - search.suggest
+        - search.highlight
+
+markdown_extensions:
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+        alternate_style: true
+    - pymdownx.highlight:
+        anchor_linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - admonition
+    - codehilite
+    - toc:
+        permalink: true
+    - pymdownx.details
+    - pymdownx.mark
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.superfences
+    - pymdownx.arithmatex:
+        generic: true
+    - footnotes
+    - pymdownx.critic
+    - pymdownx.caret
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.tilde
+    - attr_list
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+    - attr_list
+    - md_in_html
+    - abbr
+    - attr_list
+    - pymdownx.snippets
+
+
+extra:
+  social:
+    - icon: material/github
+      link: https://github.com/IRS-projets/linux-securite
+      name: IRS-projets on GitHub
