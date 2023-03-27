@@ -17,6 +17,6 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
+          working-directory: ./web/contenu
       - run: pip install mkdocs-material
-      - working-directory: ./web/contenu
       - run: mkdocs gh-deploy --force
