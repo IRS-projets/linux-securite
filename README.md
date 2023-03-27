@@ -1,5 +1,5 @@
 [![ci](https://github.com/IRS-projets/linux-securite/actions/workflows/ci.yml/badge.svg?event=push)](https://github.com/IRS-projets/linux-securite/actions/workflows/ci.yml)
-
+[![pages-build-deployment](https://github.com/IRS-projets/linux-securite/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/IRS-projets/linux-securite/actions/workflows/pages/pages-build-deployment)
 # linux-securite
 Projet de sécurité Linux
 
