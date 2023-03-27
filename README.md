@@ -1,4 +1,4 @@
-[![publishing](https://github.com/IRS-projets/linux-securite/actions/workflows/ci.yml/badge.svg?event=workflow_run)](https://github.com/IRS-projets/linux-securite/actions/workflows/ci.yml)
+[![ci](https://github.com/IRS-projets/linux-securite/actions/workflows/ci.yml/badge.svg?event=push)](https://github.com/IRS-projets/linux-securite/actions/workflows/ci.yml)
 
 # linux-securite
 Projet de sécurité Linux
