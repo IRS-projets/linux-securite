@@ -1,7 +1,7 @@
-# Bienvenue sur le Projet Linux
- 
 <iframe margin="auto" src="https://giphy.com/embed/4N5ddOOJJ7gtKTgNac" width="480" height="339" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
- 
+
+# Bienvenue sur le Projet Linux
+
 Bienvenue sur la page officielle de cette maquette!
  
 Nous sommes un groupe de quatre étudiants plus ou moins motivés qui avaient pour ambition de réaliser une maquette opérationnelle pour notre projet de fin de module.
