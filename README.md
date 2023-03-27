@@ -1,8 +1,14 @@
 [![ci](https://github.com/IRS-projets/linux-securite/actions/workflows/ci.yml/badge.svg?event=push)](https://github.com/IRS-projets/linux-securite/actions/workflows/ci.yml)
 [![pages-build-deployment](https://github.com/IRS-projets/linux-securite/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/IRS-projets/linux-securite/actions/workflows/pages/pages-build-deployment)
+
 # linux-securite
+
 Projet de sécurité Linux
 
+## Liens
+
+ - Visitez [le site du projet](https://projetlinux.site), qui sera hors-ligne en 2024
+ - Visitez [le site GitHub](https://irs-projets.github.io/linux-securite/), qui est pérenne.
 ## Règles pour la contribution
 
 Quelques règles simples pour que tout se passe proprement:
