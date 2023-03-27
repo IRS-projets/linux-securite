@@ -3,6 +3,8 @@ site_name: Projet Linux
 site_description: C'EST NOTRE PROJET!
 site_author: Tim FROLOV
 copyright: Copyright &copy; 2022 Projet Linux
+repo_name: IRS-projets/linux-securite
+repo_url: https://github.com/IRS-projets/linux-securite/
 
 nav:
     - Accueil: index.md
