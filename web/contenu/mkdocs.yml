@@ -12,7 +12,7 @@ nav:
         - SSH: ssh.md
         - NTP: ntp.md
         - DNS: dns.md
-    - Script: http://projetlinux.site/script/index.py
+    - Script: https://frolov.eu/monitoring/
 
 theme:
     name: 'material'
