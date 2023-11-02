@@ -1,4 +1,6 @@
-# Rapport technique du projet
+---
+title: Rapport technique du projet
+---
  
 Bienvenue dans le rapport technique sur l'implémentation de notre maquette.
  

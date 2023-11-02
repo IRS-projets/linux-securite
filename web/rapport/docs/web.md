@@ -1,4 +1,7 @@
-# Web
+---
+title: Web
+description: Documentation de la configuration du serveur web
+---
  
 ## Cahier des charges
  
@@ -154,4 +157,4 @@ Nous avons généré ce contenu à l'aide de l'outil [Material](https://squidfun
  
 ## Sources
  
- - [documentation.frolov.eu](http://everyone:YqLwST7MF8wohk0MmhUr@documentation.frolov.eu/linux/apache/) (ressource privée)
+ - [documentation.frolov.eu](http://documentation.frolov.eu/linux/apache/) (ressource privée)

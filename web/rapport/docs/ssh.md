@@ -1,4 +1,7 @@
-# SSH
+---
+title: SSH
+description: Documentation de la configuration du SSH
+---
 
 ## Cahier des charges
 

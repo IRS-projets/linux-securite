@@ -1,4 +1,7 @@
-# NTP
+---
+title: NTP
+description: Documentation de la configuration du NTP
+---
  
 ## Cahier des charges
  

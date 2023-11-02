@@ -1,4 +1,7 @@
-# DNS
+---
+title: DNS
+description: Documentation de la configuration du DNS.
+---
  
 ## Cahier des charges
  

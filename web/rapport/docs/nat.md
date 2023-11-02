@@ -1,4 +1,7 @@
-# Configuration du NAT
+---
+title: NAT
+description: Documentation de la configuration du NAT
+---
 
 
 ## Cahier des charges

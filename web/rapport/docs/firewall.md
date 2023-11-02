@@ -1,13 +1,6 @@
-!!!warning "Ce sujet n'a pas encore été traité."
+---
+title: Parefeu
+description: Criquets
+---
 
-## Cahier des charges
-
-## Sollution proposée
-
-### Choix matériels et logiciels
-
-### Détail des solutions implémentées
-
-## Implémentation
-
-## Sources
+[*Criquets*]

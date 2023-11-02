@@ -1,4 +1,7 @@
-# Mise en place du serveur DHCP
+---
+title: DHCP
+description: Documentation de la configuration de la mise en place du serveur DHCP
+---
  
 ## Cahier des charges
  

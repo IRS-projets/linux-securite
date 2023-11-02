@@ -1,4 +1,7 @@
-# Liste des sujets que nous avons choisi
+---
+title: Liste des sujets que nous avons choisi
+description: Cette page explicite les choix d'activités que nous avons entrepris.
+---
  
 ## Services principaux
  

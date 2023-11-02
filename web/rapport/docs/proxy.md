@@ -1,4 +1,7 @@
-# Proxy Squid
+---
+title: Proxy Squid
+description: Documentation de la configuration du proxy Squid
+---
 
 ## Cahier des charges
 
