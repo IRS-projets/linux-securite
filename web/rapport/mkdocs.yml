@@ -1,7 +1,11 @@
-site_name: Rapport
-site_description: Le rapport de NOTRE PROJET
+site_name: Projet Linux
+site_description: C'EST le rapport de NOTRE PROJET!
 site_author: Tim FROLOV
+site_url: https://projetlinux.frolov.eu
 copyright: Copyright &copy; 2022 Projet Linux
+repo_name: IRS-projets/linux-securite
+repo_url: https://github.com/IRS-projets/linux-securite/
+
 
 nav:
     - Accueil:
@@ -79,6 +83,17 @@ markdown_extensions:
     - attr_list
     - pymdownx.snippets
 
+plugins:
+  # Self-host all ressources aka fonts, icons etc (RGPD)
+  - privacy
+  # Client side search
+  - search
+  # Mass-manage meta info (useful for blog)
+  - meta
+  # Social cards - previews on social networks
+  - social
+  # Table of contents keeps the formating (icons, underline etc)
+  - typeset
 
 extra:
   social:
