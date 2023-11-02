@@ -71,6 +71,18 @@ markdown_extensions:
     - pymdownx.snippets
 
 
+plugins:
+  # Self-host all ressources aka fonts, icons etc (RGPD)
+  - privacy
+  # Client side search
+  - search
+  # Mass-manage meta info (useful for blog)
+  - meta
+  # Social cards - previews on social networks
+  - social
+  # Table of contents keeps the formating (icons, underline etc)
+  - typeset
+
 extra:
   social:
     - icon: material/github
