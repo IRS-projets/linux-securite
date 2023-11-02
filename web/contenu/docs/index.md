@@ -15,7 +15,7 @@ Voici les membres du groupe:
 ## Objectif
  
 !!! info inline end "Notes techniques"
-    Pour connaître tous les détails techniques de notre projet, merci de consulter [notre rapport](http://rapport.projetlinux.site).
+    Pour connaître tous les détails techniques de notre projet, merci de consulter [notre rapport](http://rapport.projetlinux.frolov.eu).
  
 L'objectif de ce site est de vous assister lors de votre utilisation de notre infrastructure.
  
