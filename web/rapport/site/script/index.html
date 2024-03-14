@@ -1,0 +1,1749 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Description de l'objectif et de la réalisation du script (obligation de présenter une tâche automatisée)">
+      
+      
+        <meta name="author" content="Tim FROLOV">
+      
+      
+        <link rel="canonical" href="https://rapport.projetlinux.frolov.eu/script/">
+      
+      
+        <link rel="prev" href="../collaboration/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.9+insiders-4.52.2">
+    
+    
+      
+        <title>Script - Projet Linux</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ca286e8c.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="../assets/external/fonts.googleapis.com/css.49ea35f2.css">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Script - Projet Linux" />
+<meta property="og:description" content="Description de l'objectif et de la réalisation du script (obligation de présenter une tâche automatisée)" />
+<meta property="og:image" content="https://rapport.projetlinux.frolov.eu/assets/images/social/script.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://rapport.projetlinux.frolov.eu/script/" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Script - Projet Linux" />
+<meta property="twitter:description" content="Description de l'objectif et de la réalisation du script (obligation de présenter une tâche automatisée)" />
+<meta property="twitter:image" content="https://rapport.projetlinux.frolov.eu/assets/images/social/script.png" />
+</head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="orange" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#objectif" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href=".." title="Projet Linux" class="md-header__button md-logo" aria-label="Projet Linux" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 16c0 1.72-.63 3.3-1.66 4.5.41.39.66.91.66 1.5H6c0-.59.25-1.11.66-1.5A6.902 6.902 0 0 1 5 16H3c0-1.25.57-2.36 1.46-3.09l.01-.02A6.004 6.004 0 0 0 7 8V7a5 5 0 0 1 5-5 5 5 0 0 1 5 5v1c0 2 1 3.81 2.53 4.89l.01.02c.89.73 1.46 1.84 1.46 3.09h-2m-3 0a4 4 0 0 0-4-4 4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4m-6-7 2 1.5L14 9l-2-1.5L10 9m0-4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m4 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Projet Linux
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Script
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/IRS-projets/linux-securite/" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    IRS-projets/linux-securite
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+  Accueil
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../nat/" class="md-tabs__link">
+          
+  
+  Services
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../collaboration/" class="md-tabs__link">
+        
+  
+    
+  
+  Collaboration
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Script
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Projet Linux" class="md-nav__button md-logo" aria-label="Projet Linux" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 16c0 1.72-.63 3.3-1.66 4.5.41.39.66.91.66 1.5H6c0-.59.25-1.11.66-1.5A6.902 6.902 0 0 1 5 16H3c0-1.25.57-2.36 1.46-3.09l.01-.02A6.004 6.004 0 0 0 7 8V7a5 5 0 0 1 5-5 5 5 0 0 1 5 5v1c0 2 1 3.81 2.53 4.89l.01.02c.89.73 1.46 1.84 1.46 3.09h-2m-3 0a4 4 0 0 0-4-4 4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4m-6-7 2 1.5L14 9l-2-1.5L10 9m0-4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m4 0a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1Z"/></svg>
+
+    </a>
+    Projet Linux
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/IRS-projets/linux-securite/" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    IRS-projets/linux-securite
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Accueil
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Page de garde
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../choix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Sujets choisis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Services
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Services
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nat/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    NAT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ssh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    SSH
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dhcp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    DHCP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    DNS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ntp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    NTP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../web/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Web
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../proxy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Proxy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../firewall/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Pare-feu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collaboration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Collaboration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    
+  
+    Script
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Script
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objectif" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Objectif
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-bash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Partie BASH
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie BASH">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#commandes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Commandes
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Commandes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Date
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Processeur
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memoire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Mémoire
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disque" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Disque
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Log
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crontab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Crontab
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Partie web
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie web">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#script" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Script
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-du-systeme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Configuration du système
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-dapache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Configuration d'Apache
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Sources
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objectif" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Objectif
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-bash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Partie BASH
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie BASH">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#commandes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Commandes
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Commandes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#date" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Date
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#processeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Processeur
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memoire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Mémoire
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disque" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Disque
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Log
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crontab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Crontab
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Partie web
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie web">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#script" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Script
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-du-systeme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Configuration du système
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-dapache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Configuration d'Apache
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Sources
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Script</h1>
+
+<h2 id="objectif">Objectif<a class="headerlink" href="#objectif" title="Permanent link">&para;</a></h2>
+<p>L'objectif de ce script est de faciliter le monitoring des ressources système.<br>
+Il fonctionne en deux parties qui seront détaillées ci-après:</p>
+<ul>
+<li>Log des ressources dans un fichier<ul>
+<li>Taux de fonction du processeur (quand il n'est pas <em>idle</em>)</li>
+<li>Taux d'utilisation de la mémoire</li>
+<li>Proportion du volume du disque utilisée</li>
+</ul>
+</li>
+<li>Affichage web</li>
+</ul>
+<p>Ces deux parties sont indépendantes, et seule la première est écrite en BASH.</p>
+<h2 id="partie-bash">Partie BASH<a class="headerlink" href="#partie-bash" title="Permanent link">&para;</a></h2>
+<h3 id="commandes">Commandes<a class="headerlink" href="#commandes" title="Permanent link">&para;</a></h3>
+<h4 id="date">Date<a class="headerlink" href="#date" title="Permanent link">&para;</a></h4>
+<p>Afin de loguer les différentes informations, il est important d'avoir la date des mesures.</p>
+<p>Puisqu'on aura besoin de comparer les dates pour l'affichage des graphiques, on choisit de les stocker sous forme de secondes écoulées depuis <em>EPOCH</em>.</p>
+<p>Ainsi, la commande pour obtenir la date sous ce format est:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>date +&quot;%s&quot;
+</code></pre></div>
+<h4 id="processeur">Processeur<a class="headerlink" href="#processeur" title="Permanent link">&para;</a></h4>
+<p>Nous voulons obtenir le taux d'utilisation du processeur, soit la proportion du temps où il n'est pas en train d'attendre.</p>
+<ul>
+<li>L'occupation du processeur peut être obtenue avec <code>mpstat</code>.</li>
+<li>La mesure qui nous intéresse se situe en 12<sup>e</sup> position, nous la récupérons avec <code>awk</code></li>
+<li>Pour obtenir la partie entière, on utilise <code>cut</code> pour prendre les valeurs avant la virgule.</li>
+</ul>
+<p>La ligne de commande qui en résulte est:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mpstat | awk &#39;$12 ~ /[0-9.]+/ { print 100 - $12 }&#39; | cut -d &quot;,&quot; -f 1
+</code></pre></div>
+<h4 id="memoire">Mémoire<a class="headerlink" href="#memoire" title="Permanent link">&para;</a></h4>
+<p>Utilisant <code>free</code>, on a dû faire un calcul pour obtenir le taux de mémoire utilisée en utilisant:</p>
+<ul>
+<li>La quantité totale de mémoire
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>free | awk &#39;NR==2{ print $2}&#39;
+</code></pre></div></li>
+<li>La quantité de mémoire utilisée
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>free | awk &#39;NR==2{ print $3}&#39;
+</code></pre></div></li>
+<li>Le calcul utilisée*100/totale
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>(memoryUsed*100/memoryTotal)
+</code></pre></div></li>
+</ul>
+<h4 id="disque">Disque<a class="headerlink" href="#disque" title="Permanent link">&para;</a></h4>
+<p>L'espace utilisé peut être trouvé en 5<sup>e</sup> position dans le résultat de la commande <code>df -t ext4</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>df -t ext4 | awk &#39;NR==2{ print $5}&#39; | grep -Eo &#39;[0-9]{1,3}&#39;
+</code></pre></div>
+<h3 id="log">Log<a class="headerlink" href="#log" title="Permanent link">&para;</a></h3>
+<p>On utilise les commandes précédemment définies pour générer un fichier CSV de 60 lignes:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">script.sh</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-6-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-6-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-6-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-6-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-6-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-6-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-6-10">10</a></span>
+<span class="normal"><a href="#__codelineno-6-11">11</a></span>
+<span class="normal"><a href="#__codelineno-6-12">12</a></span>
+<span class="normal"><a href="#__codelineno-6-13">13</a></span>
+<span class="normal"><a href="#__codelineno-6-14">14</a></span>
+<span class="normal"><a href="#__codelineno-6-15">15</a></span>
+<span class="normal"><a href="#__codelineno-6-16">16</a></span>
+<span class="normal"><a href="#__codelineno-6-17">17</a></span>
+<span class="normal"><a href="#__codelineno-6-18">18</a></span>
+<span class="normal"><a href="#__codelineno-6-19">19</a></span>
+<span class="normal"><a href="#__codelineno-6-20">20</a></span>
+<span class="normal"><a href="#__codelineno-6-21">21</a></span>
+<span class="normal"><a href="#__codelineno-6-22">22</a></span>
+<span class="normal"><a href="#__codelineno-6-23">23</a></span>
+<span class="normal"><a href="#__codelineno-6-24">24</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="ch">#!/bin/bash</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="c1"># Fichier contenant les releves</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="nv">file</span><span class="o">=</span><span class="s2">&quot;/var/www/html/projetlinux.com/script/fichier&quot;</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a>
+<a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="c1">### Recueil et conversion en % des informations</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="c1"># Date au format ssss</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="nv">date</span><span class="o">=</span><span class="k">$(</span>date<span class="w"> </span>+<span class="s2">&quot;%s&quot;</span><span class="k">)</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="c1"># Processeur: 100 - taux de repos</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="nv">processor</span><span class="o">=</span><span class="k">$(</span>mpstat<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;$12 ~ /[0-9.]+/ { print 100 - $12 }&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;,&quot;</span><span class="w"> </span>-f<span class="w"> </span><span class="m">1</span><span class="k">)</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="c1"># Memoire disponible</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12"></a><span class="nv">memoryTotal</span><span class="o">=</span><span class="k">$(</span>free<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;NR==2{ print $2}&#39;</span><span class="k">)</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13"></a><span class="c1"># Memoire utilisee</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14"></a><span class="nv">memoryUsed</span><span class="o">=</span><span class="k">$(</span>free<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;NR==2{ print $3}&#39;</span><span class="k">)</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15"></a><span class="c1"># Memoire en %</span>
+<a id="__codelineno-6-16" name="__codelineno-6-16"></a><span class="nv">memory</span><span class="o">=</span><span class="k">$((</span><span class="nv">memoryUsed</span><span class="o">*</span><span class="m">100</span><span class="o">/</span><span class="nv">memoryTotal</span><span class="k">))</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17"></a><span class="c1"># Disque: volume utilise</span>
+<a id="__codelineno-6-18" name="__codelineno-6-18"></a><span class="nv">disk</span><span class="o">=</span><span class="k">$(</span>df<span class="w"> </span>-t<span class="w"> </span>ext4<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;NR==2{ print $5}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-Eo<span class="w"> </span><span class="s1">&#39;[0-9]{1,3}&#39;</span><span class="k">)</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19"></a>
+<a id="__codelineno-6-20" name="__codelineno-6-20"></a><span class="c1">### Ecriture du fichier</span>
+<a id="__codelineno-6-21" name="__codelineno-6-21"></a><span class="c1"># Ligne de log</span>
+<a id="__codelineno-6-22" name="__codelineno-6-22"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">date</span><span class="si">}</span><span class="s2">;</span><span class="si">${</span><span class="nv">processor</span><span class="si">}</span><span class="s2">;</span><span class="si">${</span><span class="nv">memory</span><span class="si">}</span><span class="s2">;</span><span class="si">${</span><span class="nv">disk</span><span class="si">}</span><span class="s2">;&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$file</span>
+<a id="__codelineno-6-23" name="__codelineno-6-23"></a><span class="c1"># Troncature du fichier</span>
+<a id="__codelineno-6-24" name="__codelineno-6-24"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>tail<span class="w"> </span>-n<span class="w"> </span><span class="m">60</span><span class="w"> </span><span class="nv">$file</span><span class="k">)</span><span class="s2">&quot;</span><span class="w"> </span>&gt;<span class="w"> </span><span class="nv">$file</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="crontab">Crontab<a class="headerlink" href="#crontab" title="Permanent link">&para;</a></h3>
+<p>On veut faire tourner le script automatiquement chaque minute de façon à avoir 1h de logs.<br>
+Pour ce faire, nous ajoutons le script dans le crontab:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">/etc/crontab/</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-7-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-7-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-7-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-7-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-7-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-7-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-7-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-7-10">10</a></span>
+<span class="normal"><a href="#__codelineno-7-11">11</a></span>
+<span class="normal"><a href="#__codelineno-7-12">12</a></span>
+<span class="normal"><a href="#__codelineno-7-13">13</a></span>
+<span class="normal"><a href="#__codelineno-7-14">14</a></span>
+<span class="normal"><a href="#__codelineno-7-15">15</a></span>
+<span class="normal"><a href="#__codelineno-7-16">16</a></span>
+<span class="normal"><a href="#__codelineno-7-17">17</a></span>
+<span class="normal"><a href="#__codelineno-7-18">18</a></span>
+<span class="normal"><a href="#__codelineno-7-19">19</a></span>
+<span class="normal"><a href="#__codelineno-7-20">20</a></span>
+<span class="normal"><a href="#__codelineno-7-21">21</a></span>
+<span class="normal"><a href="#__codelineno-7-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="c1"># /etc/crontab: system-wide crontab</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="c1"># Unlike any other crontab you don&#39;t have to run the `crontab&#39;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="c1"># command to install the new version when you edit this file</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="c1"># and files in /etc/cron.d. These files also have username fields,</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="c1"># that none of the other crontabs do.</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="nv">SHELL</span><span class="o">=</span>/bin/sh
+<a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="nv">PATH</span><span class="o">=</span>/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+<a id="__codelineno-7-9" name="__codelineno-7-9"></a>
+<a id="__codelineno-7-10" name="__codelineno-7-10"></a><span class="c1"># Example of job definition:</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11"></a><span class="c1"># .---------------- minute (0 - 59)</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12"></a><span class="c1"># |  .------------- hour (0 - 23)</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13"></a><span class="c1"># |  |  .---------- day of month (1 - 31)</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14"></a><span class="c1"># |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15"></a><span class="c1"># |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16"></a><span class="c1"># |  |  |  |  |</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17"></a><span class="c1"># *  *  *  *  * user-name command to be executed</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18"></a><span class="m">17</span><span class="w"> </span>*<span class="w">    </span>*<span class="w"> </span>*<span class="w"> </span>*<span class="w">   </span>root<span class="w">    </span><span class="nb">cd</span><span class="w"> </span>/<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>run-parts<span class="w"> </span>--report<span class="w"> </span>/etc/cron.hourly
+<a id="__codelineno-7-19" name="__codelineno-7-19"></a><span class="m">25</span><span class="w"> </span><span class="m">6</span><span class="w">    </span>*<span class="w"> </span>*<span class="w"> </span>*<span class="w">   </span>root<span class="w">    </span><span class="nb">test</span><span class="w"> </span>-x<span class="w"> </span>/usr/sbin/anacron<span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">(</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>run-parts<span class="w"> </span>--report<span class="w"> </span>/etc/cron.daily<span class="w"> </span><span class="o">)</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20"></a><span class="m">47</span><span class="w"> </span><span class="m">6</span><span class="w">    </span>*<span class="w"> </span>*<span class="w"> </span><span class="m">7</span><span class="w">   </span>root<span class="w">    </span><span class="nb">test</span><span class="w"> </span>-x<span class="w"> </span>/usr/sbin/anacron<span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">(</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>run-parts<span class="w"> </span>--report<span class="w"> </span>/etc/cron.weekly<span class="w"> </span><span class="o">)</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21"></a><span class="m">52</span><span class="w"> </span><span class="m">6</span><span class="w">    </span><span class="m">1</span><span class="w"> </span>*<span class="w"> </span>*<span class="w">   </span>root<span class="w">    </span><span class="nb">test</span><span class="w"> </span>-x<span class="w"> </span>/usr/sbin/anacron<span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">(</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>run-parts<span class="w"> </span>--report<span class="w"> </span>/etc/cron.monthly<span class="w"> </span><span class="o">)</span>
+<a id="__codelineno-7-22" name="__codelineno-7-22"></a>*<span class="w">    </span>*<span class="w">  </span>*<span class="w"> </span>*<span class="w"> </span>*<span class="w">   </span>root<span class="w">    </span>/root/script.sh
+</code></pre></div></td></tr></table></div>
+<p>La dernière ligne du fichier correspond au script. Les <code>*</code> signifient que le script tourne a chaque minute, de chaque heure de chaque jour.</p>
+<h2 id="partie-web">Partie web<a class="headerlink" href="#partie-web" title="Permanent link">&para;</a></h2>
+<h3 id="script">Script<a class="headerlink" href="#script" title="Permanent link">&para;</a></h3>
+<p>La partie web consiste en un script en Python qui est lancé par Apache.</p>
+<p>Ce script lit le fichier CSV précédemment généré, place ses valeurs dans différents tableaux et les place dans des endroits spécifiques d'un template HTML.
+Il retourne ensuite l'HTML qui est interprété par le navigateur web du client.</p>
+<p>Le script est construit de la façon qui suit:</p>
+<ul>
+<li>Le fichier CSV est lu et placé dans un tableau.</li>
+<li>Les valeurs de chaque capteur sont recopiées dans un tableau associé (processeur, mémoire et disque) en sautant une case quand la différence de temps entre les mesures est supérieure à une minute</li>
+<li>Les graphiques sont injectés dans le template HTML grâce à la fonction <code>Draw_Graph</code>.</li>
+</ul>
+<p>Voici le script en entier.
+Il a été réalisé entièrement à la main, sans bibliothèques.</p>
+<div class="admonition danger">
+<p class="admonition-title">Attention aux yeux</p>
+<p>Nous avons manqué de temps pour le développement.
+Le script a été écrit dans la précipitation, et en partie copié sur le premier script de Tim (voir sources).</p>
+<p>Nous vous prions de ne pas lire ce qui suit sans protection oculaire.</p>
+</div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">/var/www/html/projetlinux.com/script/index.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">  1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">  2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">  3</a></span>
+<span class="normal"><a href="#__codelineno-8-4">  4</a></span>
+<span class="normal"><a href="#__codelineno-8-5">  5</a></span>
+<span class="normal"><a href="#__codelineno-8-6">  6</a></span>
+<span class="normal"><a href="#__codelineno-8-7">  7</a></span>
+<span class="normal"><a href="#__codelineno-8-8">  8</a></span>
+<span class="normal"><a href="#__codelineno-8-9">  9</a></span>
+<span class="normal"><a href="#__codelineno-8-10"> 10</a></span>
+<span class="normal"><a href="#__codelineno-8-11"> 11</a></span>
+<span class="normal"><a href="#__codelineno-8-12"> 12</a></span>
+<span class="normal"><a href="#__codelineno-8-13"> 13</a></span>
+<span class="normal"><a href="#__codelineno-8-14"> 14</a></span>
+<span class="normal"><a href="#__codelineno-8-15"> 15</a></span>
+<span class="normal"><a href="#__codelineno-8-16"> 16</a></span>
+<span class="normal"><a href="#__codelineno-8-17"> 17</a></span>
+<span class="normal"><a href="#__codelineno-8-18"> 18</a></span>
+<span class="normal"><a href="#__codelineno-8-19"> 19</a></span>
+<span class="normal"><a href="#__codelineno-8-20"> 20</a></span>
+<span class="normal"><a href="#__codelineno-8-21"> 21</a></span>
+<span class="normal"><a href="#__codelineno-8-22"> 22</a></span>
+<span class="normal"><a href="#__codelineno-8-23"> 23</a></span>
+<span class="normal"><a href="#__codelineno-8-24"> 24</a></span>
+<span class="normal"><a href="#__codelineno-8-25"> 25</a></span>
+<span class="normal"><a href="#__codelineno-8-26"> 26</a></span>
+<span class="normal"><a href="#__codelineno-8-27"> 27</a></span>
+<span class="normal"><a href="#__codelineno-8-28"> 28</a></span>
+<span class="normal"><a href="#__codelineno-8-29"> 29</a></span>
+<span class="normal"><a href="#__codelineno-8-30"> 30</a></span>
+<span class="normal"><a href="#__codelineno-8-31"> 31</a></span>
+<span class="normal"><a href="#__codelineno-8-32"> 32</a></span>
+<span class="normal"><a href="#__codelineno-8-33"> 33</a></span>
+<span class="normal"><a href="#__codelineno-8-34"> 34</a></span>
+<span class="normal"><a href="#__codelineno-8-35"> 35</a></span>
+<span class="normal"><a href="#__codelineno-8-36"> 36</a></span>
+<span class="normal"><a href="#__codelineno-8-37"> 37</a></span>
+<span class="normal"><a href="#__codelineno-8-38"> 38</a></span>
+<span class="normal"><a href="#__codelineno-8-39"> 39</a></span>
+<span class="normal"><a href="#__codelineno-8-40"> 40</a></span>
+<span class="normal"><a href="#__codelineno-8-41"> 41</a></span>
+<span class="normal"><a href="#__codelineno-8-42"> 42</a></span>
+<span class="normal"><a href="#__codelineno-8-43"> 43</a></span>
+<span class="normal"><a href="#__codelineno-8-44"> 44</a></span>
+<span class="normal"><a href="#__codelineno-8-45"> 45</a></span>
+<span class="normal"><a href="#__codelineno-8-46"> 46</a></span>
+<span class="normal"><a href="#__codelineno-8-47"> 47</a></span>
+<span class="normal"><a href="#__codelineno-8-48"> 48</a></span>
+<span class="normal"><a href="#__codelineno-8-49"> 49</a></span>
+<span class="normal"><a href="#__codelineno-8-50"> 50</a></span>
+<span class="normal"><a href="#__codelineno-8-51"> 51</a></span>
+<span class="normal"><a href="#__codelineno-8-52"> 52</a></span>
+<span class="normal"><a href="#__codelineno-8-53"> 53</a></span>
+<span class="normal"><a href="#__codelineno-8-54"> 54</a></span>
+<span class="normal"><a href="#__codelineno-8-55"> 55</a></span>
+<span class="normal"><a href="#__codelineno-8-56"> 56</a></span>
+<span class="normal"><a href="#__codelineno-8-57"> 57</a></span>
+<span class="normal"><a href="#__codelineno-8-58"> 58</a></span>
+<span class="normal"><a href="#__codelineno-8-59"> 59</a></span>
+<span class="normal"><a href="#__codelineno-8-60"> 60</a></span>
+<span class="normal"><a href="#__codelineno-8-61"> 61</a></span>
+<span class="normal"><a href="#__codelineno-8-62"> 62</a></span>
+<span class="normal"><a href="#__codelineno-8-63"> 63</a></span>
+<span class="normal"><a href="#__codelineno-8-64"> 64</a></span>
+<span class="normal"><a href="#__codelineno-8-65"> 65</a></span>
+<span class="normal"><a href="#__codelineno-8-66"> 66</a></span>
+<span class="normal"><a href="#__codelineno-8-67"> 67</a></span>
+<span class="normal"><a href="#__codelineno-8-68"> 68</a></span>
+<span class="normal"><a href="#__codelineno-8-69"> 69</a></span>
+<span class="normal"><a href="#__codelineno-8-70"> 70</a></span>
+<span class="normal"><a href="#__codelineno-8-71"> 71</a></span>
+<span class="normal"><a href="#__codelineno-8-72"> 72</a></span>
+<span class="normal"><a href="#__codelineno-8-73"> 73</a></span>
+<span class="normal"><a href="#__codelineno-8-74"> 74</a></span>
+<span class="normal"><a href="#__codelineno-8-75"> 75</a></span>
+<span class="normal"><a href="#__codelineno-8-76"> 76</a></span>
+<span class="normal"><a href="#__codelineno-8-77"> 77</a></span>
+<span class="normal"><a href="#__codelineno-8-78"> 78</a></span>
+<span class="normal"><a href="#__codelineno-8-79"> 79</a></span>
+<span class="normal"><a href="#__codelineno-8-80"> 80</a></span>
+<span class="normal"><a href="#__codelineno-8-81"> 81</a></span>
+<span class="normal"><a href="#__codelineno-8-82"> 82</a></span>
+<span class="normal"><a href="#__codelineno-8-83"> 83</a></span>
+<span class="normal"><a href="#__codelineno-8-84"> 84</a></span>
+<span class="normal"><a href="#__codelineno-8-85"> 85</a></span>
+<span class="normal"><a href="#__codelineno-8-86"> 86</a></span>
+<span class="normal"><a href="#__codelineno-8-87"> 87</a></span>
+<span class="normal"><a href="#__codelineno-8-88"> 88</a></span>
+<span class="normal"><a href="#__codelineno-8-89"> 89</a></span>
+<span class="normal"><a href="#__codelineno-8-90"> 90</a></span>
+<span class="normal"><a href="#__codelineno-8-91"> 91</a></span>
+<span class="normal"><a href="#__codelineno-8-92"> 92</a></span>
+<span class="normal"><a href="#__codelineno-8-93"> 93</a></span>
+<span class="normal"><a href="#__codelineno-8-94"> 94</a></span>
+<span class="normal"><a href="#__codelineno-8-95"> 95</a></span>
+<span class="normal"><a href="#__codelineno-8-96"> 96</a></span>
+<span class="normal"><a href="#__codelineno-8-97"> 97</a></span>
+<span class="normal"><a href="#__codelineno-8-98"> 98</a></span>
+<span class="normal"><a href="#__codelineno-8-99"> 99</a></span>
+<span class="normal"><a href="#__codelineno-8-100">100</a></span>
+<span class="normal"><a href="#__codelineno-8-101">101</a></span>
+<span class="normal"><a href="#__codelineno-8-102">102</a></span>
+<span class="normal"><a href="#__codelineno-8-103">103</a></span>
+<span class="normal"><a href="#__codelineno-8-104">104</a></span>
+<span class="normal"><a href="#__codelineno-8-105">105</a></span>
+<span class="normal"><a href="#__codelineno-8-106">106</a></span>
+<span class="normal"><a href="#__codelineno-8-107">107</a></span>
+<span class="normal"><a href="#__codelineno-8-108">108</a></span>
+<span class="normal"><a href="#__codelineno-8-109">109</a></span>
+<span class="normal"><a href="#__codelineno-8-110">110</a></span>
+<span class="normal"><a href="#__codelineno-8-111">111</a></span>
+<span class="normal"><a href="#__codelineno-8-112">112</a></span>
+<span class="normal"><a href="#__codelineno-8-113">113</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="ch">#!/usr/bin/python</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="kn">import</span> <span class="nn">time</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4"></a>
+<a id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="k">def</span> <span class="nf">Draw_Graph</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="nb">type</span><span class="p">):</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6"></a>    <span class="n">max_height</span> <span class="o">=</span> <span class="mi">100</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7"></a>    <span class="n">color</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="s2">&quot;black&quot;</span><span class="p">]</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8"></a>    <span class="k">if</span> <span class="nb">type</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9"></a>        <span class="n">color</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;lightblue&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">]</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10"></a>    <span class="k">if</span> <span class="nb">type</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11"></a>        <span class="n">color</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;pink&quot;</span><span class="p">,</span> <span class="s2">&quot;purple&quot;</span><span class="p">]</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12"></a>    <span class="k">if</span> <span class="nb">type</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13"></a>        <span class="n">color</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;lightgreen&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">]</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14"></a>    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">values</span><span class="p">)):</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15"></a>        <span class="n">value</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16"></a>        <span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="n">no_data</span><span class="p">:</span>
+<a id="__codelineno-8-17" name="__codelineno-8-17"></a>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;div class=&quot;no_data&quot;&gt;&lt;/div&gt;&#39;&#39;&#39;</span><span class="p">)</span>
+<a id="__codelineno-8-18" name="__codelineno-8-18"></a>        <span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19"></a>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;div class=&quot;bar&quot; style=&quot;height: 0px; margin-top: &#39;&#39;&#39;</span> <span class="o">+</span>
+<a id="__codelineno-8-20" name="__codelineno-8-20"></a>                  <span class="nb">str</span><span class="p">(</span><span class="n">max_height</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;&#39;&#39;px;&quot;&gt;&lt;/div&gt;&#39;&#39;&#39;</span><span class="p">)</span>
+<a id="__codelineno-8-21" name="__codelineno-8-21"></a>        <span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-8-22" name="__codelineno-8-22"></a>            <span class="n">height</span> <span class="o">=</span> <span class="p">(</span><span class="n">value</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span> <span class="o">*</span> <span class="n">max_height</span>
+<a id="__codelineno-8-23" name="__codelineno-8-23"></a>            <span class="n">margin</span> <span class="o">=</span> <span class="n">max_height</span> <span class="o">-</span> <span class="n">height</span>
+<a id="__codelineno-8-24" name="__codelineno-8-24"></a>            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;div class=&quot;bar&quot; style=&quot;height:&#39;&#39;&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">height</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;&#39;&#39;px; margin-top: &#39;&#39;&#39;</span> <span class="o">+</span>
+<a id="__codelineno-8-25" name="__codelineno-8-25"></a>                  <span class="nb">str</span><span class="p">(</span><span class="n">margin</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;&#39;&#39;px; background: &#39;&#39;&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">color</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;&#39;&#39;; border-color: &#39;&#39;&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">color</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;&#39;&#39;&quot;&gt;&lt;/div&gt;&#39;&#39;&#39;</span><span class="p">)</span>
+<a id="__codelineno-8-26" name="__codelineno-8-26"></a>
+<a id="__codelineno-8-27" name="__codelineno-8-27"></a><span class="c1"># Definitions</span>
+<a id="__codelineno-8-28" name="__codelineno-8-28"></a><span class="c1"># No_data value</span>
+<a id="__codelineno-8-29" name="__codelineno-8-29"></a><span class="n">no_data</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<a id="__codelineno-8-30" name="__codelineno-8-30"></a><span class="c1"># Arrays of values that will be displayed</span>
+<a id="__codelineno-8-31" name="__codelineno-8-31"></a><span class="n">processor</span> <span class="o">=</span> <span class="p">[</span><span class="n">no_data</span><span class="p">]</span><span class="o">*</span><span class="mi">60</span>
+<a id="__codelineno-8-32" name="__codelineno-8-32"></a><span class="n">memory</span> <span class="o">=</span> <span class="p">[</span><span class="n">no_data</span><span class="p">]</span><span class="o">*</span><span class="mi">60</span>
+<a id="__codelineno-8-33" name="__codelineno-8-33"></a><span class="n">disk</span> <span class="o">=</span> <span class="p">[</span><span class="n">no_data</span><span class="p">]</span><span class="o">*</span><span class="mi">60</span>
+<a id="__codelineno-8-34" name="__codelineno-8-34"></a><span class="c1"># Index of the measure inside the displayed arrays</span>
+<a id="__codelineno-8-35" name="__codelineno-8-35"></a><span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-8-36" name="__codelineno-8-36"></a><span class="c1"># Table that will have all the measures and timestamps</span>
+<a id="__codelineno-8-37" name="__codelineno-8-37"></a><span class="c1"># Format timetamp;processor;memory;disk</span>
+<a id="__codelineno-8-38" name="__codelineno-8-38"></a><span class="c1"># Timestamp is in seconds since Epoch, the rest in used %</span>
+<a id="__codelineno-8-39" name="__codelineno-8-39"></a><span class="n">measures</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+<a id="__codelineno-8-40" name="__codelineno-8-40"></a><span class="c1"># Total quantity of measures taken</span>
+<a id="__codelineno-8-41" name="__codelineno-8-41"></a><span class="n">measures_quantity</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-8-42" name="__codelineno-8-42"></a>
+<a id="__codelineno-8-43" name="__codelineno-8-43"></a><span class="c1"># Copying measures to table</span>
+<a id="__codelineno-8-44" name="__codelineno-8-44"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;fichier&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+<a id="__codelineno-8-45" name="__codelineno-8-45"></a>    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">file</span><span class="p">:</span>
+<a id="__codelineno-8-46" name="__codelineno-8-46"></a>        <span class="n">content_txt</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+<a id="__codelineno-8-47" name="__codelineno-8-47"></a>        <span class="n">content_int</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">content_txt</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">content_txt</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span>
+<a id="__codelineno-8-48" name="__codelineno-8-48"></a>                       <span class="nb">int</span><span class="p">(</span><span class="n">content_txt</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">content_txt</span><span class="p">[</span><span class="mi">3</span><span class="p">])]</span>
+<a id="__codelineno-8-49" name="__codelineno-8-49"></a>        <span class="n">measures</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">content_int</span><span class="p">)</span>
+<a id="__codelineno-8-50" name="__codelineno-8-50"></a>        <span class="n">measures_quantity</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-8-51" name="__codelineno-8-51"></a>
+<a id="__codelineno-8-52" name="__codelineno-8-52"></a><span class="c1"># &quot;Deleting&quot; measures that are more than an hour old</span>
+<a id="__codelineno-8-53" name="__codelineno-8-53"></a><span class="n">y</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-8-54" name="__codelineno-8-54"></a><span class="k">while</span> <span class="n">measures</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">&lt;</span><span class="nb">int</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">())</span><span class="o">-</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="mi">58</span><span class="p">:</span>
+<a id="__codelineno-8-55" name="__codelineno-8-55"></a>    <span class="n">y</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-8-56" name="__codelineno-8-56"></a><span class="c1"># Assigning values to the display arrays</span>
+<a id="__codelineno-8-57" name="__codelineno-8-57"></a><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">measures_quantity</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+<a id="__codelineno-8-58" name="__codelineno-8-58"></a>    <span class="c1"># Adding &quot;holes&quot; if measures where skipped</span>
+<a id="__codelineno-8-59" name="__codelineno-8-59"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-8-60" name="__codelineno-8-60"></a>        <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-8-61" name="__codelineno-8-61"></a>        <span class="k">while</span> <span class="n">measures</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">measures</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">65</span> <span class="o">+</span> <span class="mi">60</span><span class="o">*</span><span class="n">y</span><span class="p">:</span>
+<a id="__codelineno-8-62" name="__codelineno-8-62"></a>            <span class="n">y</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-8-63" name="__codelineno-8-63"></a>            <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-8-64" name="__codelineno-8-64"></a>    <span class="k">if</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="mi">60</span><span class="p">:</span>
+<a id="__codelineno-8-65" name="__codelineno-8-65"></a>        <span class="n">processor</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="n">measures</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-8-66" name="__codelineno-8-66"></a>        <span class="n">memory</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="n">measures</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>
+<a id="__codelineno-8-67" name="__codelineno-8-67"></a>        <span class="n">disk</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="n">measures</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span>
+<a id="__codelineno-8-68" name="__codelineno-8-68"></a>        <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-8-69" name="__codelineno-8-69"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-8-70" name="__codelineno-8-70"></a>        <span class="k">break</span>
+<a id="__codelineno-8-71" name="__codelineno-8-71"></a>
+<a id="__codelineno-8-72" name="__codelineno-8-72"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Content-type: text/html</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-8-73" name="__codelineno-8-73"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<a id="__codelineno-8-74" name="__codelineno-8-74"></a><span class="s1">&lt;!DOCTYPE html&gt;</span>
+<a id="__codelineno-8-75" name="__codelineno-8-75"></a>
+<a id="__codelineno-8-76" name="__codelineno-8-76"></a><span class="s1">&lt;head&gt;</span>
+<a id="__codelineno-8-77" name="__codelineno-8-77"></a><span class="s1">    &lt;title&gt;</span>
+<a id="__codelineno-8-78" name="__codelineno-8-78"></a><span class="s1">        Performances</span>
+<a id="__codelineno-8-79" name="__codelineno-8-79"></a><span class="s1">    &lt;/title&gt;</span>
+<a id="__codelineno-8-80" name="__codelineno-8-80"></a><span class="s1">    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;&gt;</span>
+<a id="__codelineno-8-81" name="__codelineno-8-81"></a><span class="s1">&lt;/head&gt;</span>
+<a id="__codelineno-8-82" name="__codelineno-8-82"></a>
+<a id="__codelineno-8-83" name="__codelineno-8-83"></a><span class="s1">&lt;body&gt;</span>
+<a id="__codelineno-8-84" name="__codelineno-8-84"></a><span class="s1">    &lt;div class=&quot;winwow&quot;&gt;</span>
+<a id="__codelineno-8-85" name="__codelineno-8-85"></a><span class="s1">        &lt;div class=&quot;window_header&quot;&gt;</span>
+<a id="__codelineno-8-86" name="__codelineno-8-86"></a><span class="s1">            &lt;button class=&quot;custom_button&quot; onClick=&quot;window.location.reload(true)&quot;&gt;Reload&lt;/button&gt;</span>
+<a id="__codelineno-8-87" name="__codelineno-8-87"></a><span class="s1">        &lt;/div&gt;</span>
+<a id="__codelineno-8-88" name="__codelineno-8-88"></a><span class="s1">        &lt;div class=&quot;window_content&quot;&gt;</span>
+<a id="__codelineno-8-89" name="__codelineno-8-89"></a><span class="s1">            &lt;div class=&quot;metric&quot;&gt;</span>
+<a id="__codelineno-8-90" name="__codelineno-8-90"></a><span class="s1">                Processor: &#39;&#39;&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">processor</span><span class="p">[</span><span class="n">index</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;&#39;&#39;%</span>
+<a id="__codelineno-8-91" name="__codelineno-8-91"></a><span class="s1">                &lt;div class=&quot;graph&quot;&gt;</span>
+<a id="__codelineno-8-92" name="__codelineno-8-92"></a><span class="s1">                &#39;&#39;&#39;</span><span class="p">)</span>
+<a id="__codelineno-8-93" name="__codelineno-8-93"></a><span class="n">Draw_Graph</span><span class="p">(</span><span class="n">processor</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-8-94" name="__codelineno-8-94"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;/div&gt;</span>
+<a id="__codelineno-8-95" name="__codelineno-8-95"></a><span class="s1">            &lt;/div&gt;</span>
+<a id="__codelineno-8-96" name="__codelineno-8-96"></a><span class="s1">            &lt;div class=&quot;metric&quot;&gt;</span>
+<a id="__codelineno-8-97" name="__codelineno-8-97"></a><span class="s1">                Memory: &#39;&#39;&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">memory</span><span class="p">[</span><span class="n">index</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;&#39;&#39;%</span>
+<a id="__codelineno-8-98" name="__codelineno-8-98"></a><span class="s1">                &lt;div class=&quot;graph&quot;&gt;</span>
+<a id="__codelineno-8-99" name="__codelineno-8-99"></a><span class="s1">                &#39;&#39;&#39;</span><span class="p">)</span>
+<a id="__codelineno-8-100" name="__codelineno-8-100"></a><span class="n">Draw_Graph</span><span class="p">(</span><span class="n">memory</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-8-101" name="__codelineno-8-101"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;/div&gt;</span>
+<a id="__codelineno-8-102" name="__codelineno-8-102"></a><span class="s1">            &lt;/div&gt;</span>
+<a id="__codelineno-8-103" name="__codelineno-8-103"></a><span class="s1">            &lt;div class=&quot;metric&quot;&gt;</span>
+<a id="__codelineno-8-104" name="__codelineno-8-104"></a><span class="s1">                Disk: &#39;&#39;&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">disk</span><span class="p">[</span><span class="n">index</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;&#39;&#39;%</span>
+<a id="__codelineno-8-105" name="__codelineno-8-105"></a><span class="s1">                &lt;div class=&quot;graph&quot;&gt;</span>
+<a id="__codelineno-8-106" name="__codelineno-8-106"></a><span class="s1">                &#39;&#39;&#39;</span><span class="p">)</span>
+<a id="__codelineno-8-107" name="__codelineno-8-107"></a><span class="n">Draw_Graph</span><span class="p">(</span><span class="n">disk</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<a id="__codelineno-8-108" name="__codelineno-8-108"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;/div&gt;</span>
+<a id="__codelineno-8-109" name="__codelineno-8-109"></a><span class="s1">            &lt;/div&gt;</span>
+<a id="__codelineno-8-110" name="__codelineno-8-110"></a><span class="s1">        &lt;/div&gt;</span>
+<a id="__codelineno-8-111" name="__codelineno-8-111"></a><span class="s1">    &lt;/div&gt;</span>
+<a id="__codelineno-8-112" name="__codelineno-8-112"></a><span class="s1">&lt;/body&gt;</span>
+<a id="__codelineno-8-113" name="__codelineno-8-113"></a><span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="configuration-du-systeme">Configuration du système<a class="headerlink" href="#configuration-du-systeme" title="Permanent link">&para;</a></h3>
+<p>Télécharger Python 3:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>apt install python3
+</code></pre></div>
+<p>Ajouter Python dans <em>PATH</em> pour la session qui lance le script:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">A la suite de .profile</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-11" name="__codelineno-10-11"></a><span class="nb">export</span><span class="w"> </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$PATH</span><span class="s2">:/usr/bin/python:/usr/bin/python3&quot;</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="configuration-dapache">Configuration d'Apache<a class="headerlink" href="#configuration-dapache" title="Permanent link">&para;</a></h3>
+<p>Pour qu'Apache exécute le script, il faut:</p>
+<ul>
+<li>Autoriser les scripts</li>
+<li>Ajouter un handler Python</li>
+<li>Charger le module CGI</li>
+</ul>
+<p>Chercher et modifier la partie correspondante dans le fichier de configuration d'Apache</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">/etc/apache2/apache2.conf</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-170">170</a></span>
+<span class="normal"><a href="#__codelineno-11-171">171</a></span>
+<span class="normal"><a href="#__codelineno-11-172">172</a></span>
+<span class="normal"><a href="#__codelineno-11-173">173</a></span>
+<span class="normal"><a href="#__codelineno-11-174">174</a></span>
+<span class="normal"><a href="#__codelineno-11-175">175</a></span>
+<span class="normal"><a href="#__codelineno-11-176">176</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-170" name="__codelineno-11-170"></a><span class="p">&lt;</span><span class="nt">Directory</span> <span class="err">/</span><span class="na">var</span><span class="err">/</span><span class="na">www</span><span class="p">/&gt;</span>
+<a id="__codelineno-11-171" name="__codelineno-11-171"></a>        Options Indexes FollowSymLinks ExecCGI
+<a id="__codelineno-11-172" name="__codelineno-11-172"></a>        AddHandler cgi-script .cgi .py
+<a id="__codelineno-11-173" name="__codelineno-11-173"></a>        LoadModule cgi_module /usr/lib/apache2/modules/mod_cgi.so
+<a id="__codelineno-11-174" name="__codelineno-11-174"></a>        AllowOverride None
+<a id="__codelineno-11-175" name="__codelineno-11-175"></a>        Require all granted
+<a id="__codelineno-11-176" name="__codelineno-11-176"></a><span class="p">&lt;/</span><span class="nt">Directory</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>systemstl reload apache2
+</code></pre></div>
+<h2 id="sources">Sources<a class="headerlink" href="#sources" title="Permanent link">&para;</a></h2>
+<ul>
+<li>La structure de la page web et la fonction de génération des graphiques ont été inspirés de <a href="https://sensors.frols.com/draveil1">sensors.frols.com</a>.</li>
+<li><a href="https://fedingo.com/how-to-run-python-script-in-apache-web-server/">fedingo.com</a></li>
+<li><a href="https://httpd.apache.org/docs/current/fr/howto/cgi.html">apache.org</a></li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Retour en haut de la page
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 Projet Linux
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs Insiders
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/IRS-projets/linux-securite" target="_blank" rel="noopener" title="IRS-projets on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "content.tabs.link", "content.tooltips", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.1e90e0fb.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.0e2aa882.min.js"></script>
+      
+    
+  </body>
+</html>
