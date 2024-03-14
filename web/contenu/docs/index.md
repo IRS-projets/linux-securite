@@ -87,7 +87,7 @@ Les sujets sont détaillés pour donner une vue d'ensemble sur l'avancée du gro
  
 ## Liens utiles
  
- - [Rapport technique](http://rapport.projetlinux.site)
+ - [Rapport technique](http://rapport.projetlinux.frolov.eu)
  - [GitHub](https://github.com/IRS-projets/linux-securite/)
  
 <hr>
