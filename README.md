@@ -9,6 +9,8 @@ Projet de sécurité Linux
 
  - Visitez [le site du projet](https://projetlinux.site), qui sera hors-ligne en 2024
  - Visitez [le site GitHub](https://irs-projets.github.io/linux-securite/), qui est pérenne.
+ - Visitez [le site archive](https://projetlinux.frolov.eu/), qui est pérenne. 
+ 
 ## Règles pour la contribution
 
 Quelques règles simples pour que tout se passe proprement:
